@@ -1,19 +1,3 @@
-# alt_methods
-Modern multilingual website for an international construction and engineering company specializing in rope access, facade repair, maintenance, and hard-to-reach construction works
-Так. Якщо це README саме для **GitHub-репозиторію**, я б зробив його не як опис технічного завдання для дизайнера, а як презентацію самого проєкту: що це за сайт, для кого він, які сторінки реалізовані та які технології використані.
-
-### Короткий опис репозиторію
-
-> Modern multilingual website for an international construction and engineering company specializing in rope access, facade repair, maintenance, and hard-to-reach construction works.
-
-Або трохи коротше:
-
-> Modern European-style website for an international construction and engineering company specializing in rope access and hard-to-reach works.
-
----
-
-# README.md
-
 # Construction & Engineering Company Website
 
 A modern, multilingual website for a professional construction and engineering company specializing in **rope access, high-altitude, facade, maintenance, and hard-to-reach works**.
