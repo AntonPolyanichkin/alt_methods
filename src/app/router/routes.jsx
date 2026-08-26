@@ -8,8 +8,12 @@ import ProjectDetails from "@/pages/projectDetails/ProjectDetails";
 import About from "@/pages/about/About";
 import Contacts from "@/pages/contacts/Contacts";
 import NotFound from "@/pages/notFound/NotFound";
-
+import RootRedirect from "../appInit/rootRedirect/rootRedirect";
 export const routes = [
+  {
+    path: "/",
+    element: <RootRedirect />,
+  },
   {
     path: "/:lang",
     element: <MainLayout />,

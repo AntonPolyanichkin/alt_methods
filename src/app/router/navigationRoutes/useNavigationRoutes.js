@@ -1,6 +1,8 @@
 import { frontRoutes } from "../frontRoutes/frontRoutes";
-
-export function navigationPath(lang) {
+import { useTranslation } from "react-i18next";
+export function useNavigationRoutes() {
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
   return {
     home: `/${lang}`,
     services: `/${lang}/${frontRoutes.services}`,

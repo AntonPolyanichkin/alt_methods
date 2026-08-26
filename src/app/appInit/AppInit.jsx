@@ -6,10 +6,14 @@ export default function AppInit() {
     const onStorage = (e) => {
       if (e.key === "i18nextLng" && e.newValue && e.newValue !== i18n.language) {
         i18n.changeLanguage(e.newValue);
+        console.log(e.newValue);
+        
       }
     };
     window.addEventListener("storage", onStorage);
     return () => window.removeEventListener("storage", onStorage);
-  }, [i18n]);
-  return null;
+  }, [i18n])
+  
+  return null
+  
 }

@@ -1,4 +1,7 @@
 {
+  "header":{
+    "pictureAlt": "лого"
+  },
   "nav": {
     "home": "Главная",
     "services": "Услуги",
