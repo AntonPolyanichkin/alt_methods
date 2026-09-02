@@ -1,0 +1,73 @@
+@use "../../../../shared/styles/sizeMixin" as *;
+@use "../../../../shared/styles/var" as *;
+.languageSelect {
+  position: relative;
+  padding: 0.625rem;
+  color: #151b28;
+  min-width: 3.125rem;
+  max-height: 2.5rem;
+  border-radius: 0.75rem;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.0625rem;
+
+    width: 0;
+    height: 0.125rem;
+    background-color: $accent-color;
+
+    transition: width 0.4s ease;
+  }
+  @media (any-hover: hover) and (pointer: fine) {
+    &:hover {
+      color: $accent-color;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  :global(.MuiSelect-select) {
+    padding: 0.625rem 2rem 0.625rem 0.875rem;
+    font-size: 0.8125rem;
+    color: $accent-color;
+    @include adaptiveValue("font-size", 14, 10);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  :global(.MuiSelect-icon) {
+    right: 0.625rem;
+    color: $accent-color;
+    font-size: 1.25rem;
+    transition:
+      transform 0.2s ease,
+      color 0.2s ease;
+  }
+  & :global(.MuiSelect-select:focus-visible) {
+    outline: 0.0625rem solid $accent-color;
+    outline-offset: 0.125rem;
+  }
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border: none;
+  }
+}
+.languageMenuItem {
+  &:global(.MuiMenuItem-root) {
+    width: 100%;
+    padding: 0.875rem;
+    color: $accent-color;
+    @include adaptiveValue("font-size", 14, 10);
+    font-weight: 500;
+    @media (any-hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: rgba($accent-color, 0.08);
+      }
+    }
+
+    &:global(.Mui-selected) {
+      background-color: rgba($accent-color, 0.14);
+    }
+  }
+}
+

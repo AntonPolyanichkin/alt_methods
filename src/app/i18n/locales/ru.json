@@ -1,12 +1,18 @@
 {
-  "header":{
-    "pictureAlt": "лого"
+  "header": {
+    "pictureAlt": "лого",
+    "closeMenu" : "close menu",
+    "openMenu": "open menu"
   },
-  "nav": {
-    "home": "Главная",
-    "services": "Услуги",
-    "portfolio": "Портфолио",
-    "about": "О нас",
-    "contact": "Контакты"
+  "menu": {
+    "title": {
+      "services": "Услуги",
+      "portfolio": "Портфолио",
+      "about": "О нас",
+      "contact": "Контакты"
+    }
+  },
+  "getQuoteBtn": {
+    "btnText": "Узнать стоимость"
   }
 }

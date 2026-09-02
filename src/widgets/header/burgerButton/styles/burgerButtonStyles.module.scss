@@ -1,0 +1,87 @@
+@use "../../../../shared/styles/var" as *;
+@use "../../../../shared/styles/sizeMixin" as *;
+
+.burger {
+  display: none;
+  align-items: center;
+  column-gap: 0.5rem;
+  flex-shrink: 0;
+  padding: 0.5rem 0.875rem 0.5rem 0.75rem;
+  background-color: $accent-color;
+  border: 0.0625rem solid $accent-color;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+
+  @media (max-width: toEm(710.98)) {
+    display: inline-flex;
+  }
+
+  @media (any-hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: #264761;
+      border-color: #264761;
+    }
+  }
+}
+
+.burgerIcon {
+  position: relative;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 0.875rem;
+  z-index: 3;
+}
+
+.burgerLine {
+  position: absolute;
+  left: 0;
+  height: 0.1875rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    width 0.3s ease,
+    top 0.3s ease;
+
+  &:nth-child(1) {
+    top: 0;
+    width: 100%;
+  }
+  &:nth-child(2) {
+    top: 100%;
+    width: 62%;
+    transform: translateY(-100%);
+  }
+}
+
+.burgerLabel {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: color 0.25s ease;
+}
+
+.burgerOpen {
+  background-color: #ffffff;
+  border-color: $accent-color;
+
+  & .burgerLine {
+    width: 100%;
+    background-color: $accent-color;
+  }
+  & .burgerLine:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  & .burgerLine:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  & .burgerLabel {
+    color: $accent-color;
+  }
+}

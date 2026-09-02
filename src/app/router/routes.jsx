@@ -22,16 +22,15 @@ export const routes = [
       {
         index: true,
         element: <Home />,
-        meta: {
-          title: "Home",
-          isInMenu: true,
+         meta: {
+          isInMenu: false,
         },
       },
       {
         path: frontRoutes.services,
         element: <Services />,
         meta: {
-          title: "Services",
+          title: "services",
           isInMenu: true,
         },
       },
@@ -44,7 +43,7 @@ export const routes = [
         path: frontRoutes.portfolio,
         element: <Portfolio />,
         meta: {
-          title: "Portfolio",
+          title: "portfolio",
           isInMenu: true,
         },
       },
@@ -57,7 +56,7 @@ export const routes = [
         path: frontRoutes.about,
         element: <About />,
         meta: {
-          title: "About",
+          title: "about",
           isInMenu: true,
         },
       },
@@ -65,7 +64,7 @@ export const routes = [
         path: frontRoutes.contacts,
         element: <Contacts />,
         meta: {
-          title: "Contacts",
+          title: "contact",
           isInMenu: true,
         },
       },

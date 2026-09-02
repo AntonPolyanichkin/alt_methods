@@ -1,12 +1,18 @@
 {
-  "header":{
-    "pictureAlt": "лого"
+  "header": {
+    "pictureAlt": "лого",
+    "closeMenu" : "close menu",
+    "openMenu": "open menu"
   },
-  "nav": {
-    "home": "Home",
-    "services": "Services",
-    "portfolio": "Portfolio",
-    "about": "About Us",
-    "contact": "Contact"
+  "menu": {
+    "title": {
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "about": "About Us",
+      "contact": "Contact"
+    }
+  },
+  "getQuoteBtn": {
+    "btnText": "Get a Quote"
   }
 }
