@@ -1,7 +1,7 @@
 {
   "header": {
     "pictureAlt": "лого",
-    "closeMenu" : "close menu",
+    "closeMenu": "close menu",
     "openMenu": "open menu"
   },
   "menu": {
@@ -14,5 +14,12 @@
   },
   "getQuoteBtn": {
     "btnText": "Get a Quote"
+  },
+  "hero": {
+    "eyebrow": "Tallinn · Internationally",
+    "titleLine1": "Precision Work",
+    "titleLine2": "at Any Height",
+    "description": "Technical building maintenance and engineering works across Estonia and internationally. Where scaffolding is impractical, we deliver.",
+    "servicesBtn": "Our Services"
   }
 }

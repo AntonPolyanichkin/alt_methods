@@ -1,7 +1,7 @@
 {
   "header": {
     "pictureAlt": "лого",
-    "closeMenu" : "close menu",
+    "closeMenu": "close menu",
     "openMenu": "open menu"
   },
   "menu": {
@@ -14,5 +14,12 @@
   },
   "getQuoteBtn": {
     "btnText": "Uuri hinda"
+  },
+  "hero": {
+    "eyebrow": "Tallinn · Rahvusvaheliselt",
+    "titleLine1": "Täpne töö",
+    "titleLine2": "igal kõrgusel",
+    "description": "Tehniline hoonehooldus ja inseneritööd üle Eesti ja rahvusvaheliselt. Seal, kus tellingute kasutamine pole otstarbekas, tuleme appi.",
+    "servicesBtn": "Meie teenused"
   }
 }

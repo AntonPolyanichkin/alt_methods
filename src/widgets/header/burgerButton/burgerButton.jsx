@@ -1,8 +1,7 @@
-import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./styles/burgerButtonStyles.module.scss";
 
-const BurgerButton = forwardRef(function BurgerButton({ isOpen, onClick, ref }) {
+function BurgerButton({ isOpen, onClick, ref }) {
   const { t } = useTranslation();
 
   return (
@@ -12,7 +11,7 @@ const BurgerButton = forwardRef(function BurgerButton({ isOpen, onClick, ref }) 
       className={`${styles.burger} ${isOpen ? styles.burgerOpen : ""}`}
       onClick={onClick}
       aria-expanded={isOpen}
-      aria-controls="mobile-navigation"
+      aria-controls="navigation"
       aria-label={isOpen ? t("header.closeMenu") : t("header.openMenu")}
     >
       <span className={styles.burgerIcon}>
@@ -22,6 +21,6 @@ const BurgerButton = forwardRef(function BurgerButton({ isOpen, onClick, ref }) 
       <span className={styles.burgerLabel}>{isOpen ? t("header.closeMenu") : t("header.openMenu")}</span>
     </button>
   );
-});
+}
 
 export default BurgerButton;

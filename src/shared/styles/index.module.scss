@@ -1,26 +1,26 @@
 @use "_reset.scss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 body {
-	font-family: "Inter", sans-serif;
-	// &.scroll-lock {
-	// 	overflow: hidden;
-	// 	touch-action: none;
-	// 	overscroll-behavior: none;
-	// }
-	
+  font-family: "Inter", sans-serif;
+  // &.scroll-lock {
+  // 	overflow: hidden;
+  // 	touch-action: none;
+  // 	overscroll-behavior: none;
+  // }
 }
 .wrapper {
-	overflow: clip;
-	min-height: 100%;
-	font-family: "Montserrat", sans-serif;
-	display: flex;
-	flex-direction: column;
-	& main {
-		flex-grow: 1;
-	}
+  overflow: clip;
+  min-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  & main {
+    flex-grow: 1;
+  }
 }
-[class*="Container"] {
+[class*="-container"] {
+  max-width: 90rem;
   padding-inline: 0.9375rem;
-  margin-inline: auto;
+  margin: 0 auto;
 }

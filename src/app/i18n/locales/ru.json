@@ -1,7 +1,7 @@
 {
   "header": {
     "pictureAlt": "лого",
-    "closeMenu" : "close menu",
+    "closeMenu": "close menu",
     "openMenu": "open menu"
   },
   "menu": {
@@ -14,5 +14,12 @@
   },
   "getQuoteBtn": {
     "btnText": "Узнать стоимость"
+  },
+  "hero": {
+    "eyebrow": "Таллинн · Международно",
+    "titleLine1": "Точная работа",
+    "titleLine2": "на любой высоте",
+    "description": "Техническое обслуживание зданий и инженерные работы по всей Эстонии и за рубежом. Там, где леса нецелесообразны, работаем мы.",
+    "servicesBtn": "Наши услуги"
   }
 }

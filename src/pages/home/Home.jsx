@@ -1,6 +1,11 @@
-import styles from "./styles/homeStyles.module.scss"
+import Hero from "@/widgets/homePageSections/Hero/Hero";
+import styles from "./styles/homeStyles.module.scss";
 function Home() {
-  return ( <h1>Home</h1> );
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default Home;
