@@ -21,5 +21,13 @@
     "titleLine2": "at Any Height",
     "description": "Technical building maintenance and engineering works across Estonia and internationally. Where scaffolding is impractical, we deliver.",
     "servicesBtn": "Our Services"
-  }
+  },
+  "companyStats": {
+  "ariaLabel": "Company statistics",
+  "projectsCompleted": "Projects Completed",
+  "yearsActive": "Years Active",
+  "certifiedTechnicians": "Certified Technicians",
+  "countriesServed": "Countries Served"
+},
+"companyClients": { "title": "Trusted by clients across Europe" }
 }

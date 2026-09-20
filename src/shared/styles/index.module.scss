@@ -1,5 +1,6 @@
 @use "_reset.scss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@use "_var.scss" as *;
+
 
 body {
   font-family: "Inter", sans-serif;
@@ -12,7 +13,6 @@ body {
 .wrapper {
   overflow: clip;
   min-height: 100%;
-  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   & main {
@@ -20,7 +20,7 @@ body {
   }
 }
 [class*="-container"] {
-  max-width: 90rem;
+  max-width: $container-max-width;
   padding-inline: 0.9375rem;
   margin: 0 auto;
 }

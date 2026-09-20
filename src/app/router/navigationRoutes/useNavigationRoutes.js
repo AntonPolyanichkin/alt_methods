@@ -10,6 +10,6 @@ export function useNavigationRoutes() {
     portfolio: `/${lang}/${frontRoutes.portfolio}`,
     projectDetail: (slug) => `/${lang}/portfolio/${slug}`,
     about: `/${lang}/${frontRoutes.about}`,
-    contact: `/${lang}/${frontRoutes.contact}`,
+    contact: `/${lang}/${frontRoutes.contacts}`,
   };
 }

@@ -21,5 +21,13 @@
     "titleLine2": "igal kõrgusel",
     "description": "Tehniline hoonehooldus ja inseneritööd üle Eesti ja rahvusvaheliselt. Seal, kus tellingute kasutamine pole otstarbekas, tuleme appi.",
     "servicesBtn": "Meie teenused"
-  }
+  },
+  "companyStats": {
+  "ariaLabel": "Ettevõtte statistika",
+  "projectsCompleted": "Valminud projektid",
+  "yearsActive": "Tegutsemisaastat",
+  "certifiedTechnicians": "Sertifitseeritud tehnikut",
+  "countriesServed": "Teenindatud riiki"
+},
+"companyClients": { "title": "Meid usaldavad kliendid üle Euroopa" }
 }

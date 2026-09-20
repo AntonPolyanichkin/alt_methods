@@ -4,11 +4,11 @@ import { useTranslation } from "react-i18next";
 function Hero() {
   const { t } = useTranslation();
   return (
-    <section aria-label="hero-title" className={styles.heroSection}>
+    <section className={styles.heroSection}>
       <div className={styles["hero-container"]}>
         <div className={styles.contentContainer}>
           <p className={styles.heroEyebrow}>{t("hero.eyebrow")}</p>
-          <h1 className={styles.heroTitle} id="hero-title">
+          <h1 className={styles.heroTitle}>
             {t("hero.titleLine1")} <br /> {t("hero.titleLine2")}
           </h1>
           <p className={styles.text}>{t("hero.description")}</p>

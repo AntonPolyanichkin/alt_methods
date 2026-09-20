@@ -81,6 +81,7 @@
       background: url("../../../shared/pictures/icons/phone-icon.svg") no-repeat center;
       background-size: contain;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -98,6 +99,11 @@
         color: $accent-color;
         &::after {
           transform: scaleX(1);
+        }
+
+        &::before {
+          background: url("../../../shared/pictures/icons/phone-icon-hover.svg") no-repeat center;
+          background-size: contain;
         }
       }
     }
