@@ -1,9 +1,10 @@
 import { Link } from "react-router";
 import styles from "./styles/selectedProjectsStyles.module.scss";
+import picture from "./pictures/Image (Ülemiste City Office Tower).png";
 function SelectedProjects() {
   return (
     <section className={styles.selectedProgectsSection}>
-      <div className={styles.selectedProgectsContainer}>
+      <div className={styles["selected-progects-container"]}>
         <div className={styles.selectedProgectsText}>
           <div className={styles.selectedProgectsMainText}>
             <p className={styles.selectedProgectsEyebrow}>Portfolio</p>
@@ -19,7 +20,27 @@ function SelectedProjects() {
         <div className={styles.selectedProgectsCardsContianer}>
           <article className={styles.selectedProgectsCard}>
             <div className={styles.selectedProgectsCardPictureContainer}>
-              <img src="" alt="" className={styles.selectedProgectsCardPicture} />
+              <img src={picture} alt="" className={styles.selectedProgectsCardPicture} />
+            </div>
+            <div className={styles.selectedProgectsCardTag}>
+              <p>Facade Repair</p>
+            </div>
+            <p className={styles.selectedProgectsCardLocation}>Tallinn, Estonia</p>
+            <h3 className={styles.selectedProgectsCardTitle}>Ülemiste City Office Tower</h3>
+          </article>
+          <article className={styles.selectedProgectsCard}>
+            <div className={styles.selectedProgectsCardPictureContainer}>
+              <img src={picture} alt="" className={styles.selectedProgectsCardPicture} />
+            </div>
+            <div className={styles.selectedProgectsCardTag}>
+              <p>Facade Repair</p>
+            </div>
+            <p className={styles.selectedProgectsCardLocation}>Tallinn, Estonia</p>
+            <h3 className={styles.selectedProgectsCardTitle}>Ülemiste City Office Tower</h3>
+          </article>
+          <article className={styles.selectedProgectsCard}>
+            <div className={styles.selectedProgectsCardPictureContainer}>
+              <img src={picture} alt="" className={styles.selectedProgectsCardPicture} />
             </div>
             <div className={styles.selectedProgectsCardTag}>
               <p>Facade Repair</p>

@@ -1,7 +1,6 @@
 @use "_reset.scss";
 @use "_var.scss" as *;
 
-
 body {
   font-family: "Inter", sans-serif;
   // &.scroll-lock {
@@ -10,6 +9,7 @@ body {
   // 	overscroll-behavior: none;
   // }
 }
+
 .wrapper {
   overflow: clip;
   min-height: 100%;
@@ -19,6 +19,7 @@ body {
     flex-grow: 1;
   }
 }
+
 [class*="-container"] {
   max-width: $container-max-width;
   padding-inline: 0.9375rem;

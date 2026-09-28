@@ -1,0 +1,10 @@
+@use "./sizeMixin" as *;
+@mixin eyeBrowStyles() {
+ @include adaptiveValue("margin-bottom", 16, 8);
+  color: #448fc8;
+  @include adaptiveValue("font-size", 12, 8);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}

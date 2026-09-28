@@ -1,5 +1,6 @@
 @use "../../../../shared/styles/sizeMixin" as *;
-
+@use "../../../../shared/styles/eyeBrowStyles" as *;
+@use "../../../../shared/styles/titlesStyles" as *;
 .heroSection {
   position: relative;
   display: flex;
@@ -33,23 +34,11 @@
   }
 
   & .heroEyebrow {
-    color: #448fc8;
-    @include adaptiveValue("font-size", 12, 8);
-    font-weight: 600;
-    line-height: 1.3;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
+    @include eyeBrowStyles;
   }
 
   & .heroTitle {
-    color: #fff;
-    @include adaptiveValue("font-size", 72, 30);
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: -0.1125rem;
-    @media (max-width: toEm($mobile)) {
-      letter-spacing: -0.05625rem;
-    }
+    @include titleStyles(#fff,1,72,30);
   }
 
   & .text {
@@ -94,7 +83,7 @@
     }
   }
 
-  & .contentContainer{
+  & .contentContainer {
     @media (max-width: toEm(380)) {
       text-align: center;
     }
@@ -104,7 +93,7 @@
     & {
       flex-direction: column;
       justify-content: flex-end;
-      padding: 3.75rem .625rem  1.25rem .625rem;
+      padding: 3.75rem 0.625rem 1.25rem 0.625rem;
     }
   }
 }

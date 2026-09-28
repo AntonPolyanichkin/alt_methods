@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { Navigate, Outlet, useParams } from "react-router";
 import { useTranslation } from "react-i18next";
 
-
 import Header from "@/widgets/header/Header";
 import { DEFAULT_LANG, SUPPORTED_LANGS } from "../i18n/langs";
+import Footer from "@/widgets/footer/Footer";
 export default function MainLayout() {
   const { lang } = useParams();
   const { i18n } = useTranslation();
@@ -22,10 +22,13 @@ export default function MainLayout() {
 
   return (
     <>
-      <Header />
-      <main>
-        <Outlet context={{ lang }} />
-      </main>
+      <div className="wrapper">
+        <Header />
+        <main>
+          <Outlet context={{ lang }} />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

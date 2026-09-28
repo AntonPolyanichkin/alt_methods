@@ -1,41 +1,81 @@
 import styles from "./styles/commonQuestionsStyles.module.scss";
+import AddIcon from "@mui/icons-material/Add";
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
+
 function CommonQuestions() {
   return (
     <section className={styles.faqSection}>
-      <div className={styles.faqContainer}>
+      <div className={styles["faq-container"]}>
         <p className={styles.faqEyebrow}>FAQ</p>
         <h2 className={styles.faqTitle}>Common Questions</h2>
 
         <div className={styles.faqList}>
-          <details className={styles.faqItem}>
-            <summary className={styles.faqQuestion}>What is rope access, and when is it used?</summary>
-            <p className={styles.faqAnswer}>{/* текст відповіді */}</p>
-          </details>
-
-          <details className={styles.faqItem}>
-            <summary className={styles.faqQuestion}>Is rope access safe?</summary>
-            <p className={styles.faqAnswer}>{/* текст відповіді */}</p>
-          </details>
-
-          <details className={styles.faqItem}>
-            <summary className={styles.faqQuestion}>Do you work outside Estonia?</summary>
-            <p className={styles.faqAnswer}>{/* текст відповіді */}</p>
-          </details>
-
-          <details className={styles.faqItem}>
-            <summary className={styles.faqQuestion}>How quickly can you mobilise?</summary>
-            <p className={styles.faqAnswer}>{/* текст відповіді */}</p>
-          </details>
-
-          <details className={styles.faqItem}>
-            <summary className={styles.faqQuestion}>What does the quotation include?</summary>
-            <p className={styles.faqAnswer}>{/* текст відповіді */}</p>
-          </details>
-
-          <details className={styles.faqItem}>
-            <summary className={styles.faqQuestion}>What size projects do you take on?</summary>
-            <p className={styles.faqAnswer}>{/* текст відповіді */}</p>
-          </details>
+          <Accordion>
+            <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
+              <Typography className={styles.heading}>What is rope access, and when is it used?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                blandit leo lobortis eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
+              <Typography className={styles.heading}>Is rope access safe?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                blandit leo lobortis eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
+              <Typography className={styles.heading}>Do you work outside Estonia?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                blandit leo lobortis eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
+              <Typography className={styles.heading}>How quickly can you mobilise?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                blandit leo lobortis eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
+              <Typography className={styles.heading}>What does the quotation include?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                blandit leo lobortis eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
+              <Typography className={styles.heading}>What size projects do you take on?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+                blandit leo lobortis eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </div>
     </section>

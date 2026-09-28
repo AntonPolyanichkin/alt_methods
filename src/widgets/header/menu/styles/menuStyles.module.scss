@@ -40,7 +40,7 @@
     color: $accent-color;
   }
   @media (any-hover: hover) and (pointer: fine) {
-    .menuLink:hover {
+    .menuLink:hover:not(:focus-visible) {
       color: $accent-color;
       &::after {
         width: 100%;

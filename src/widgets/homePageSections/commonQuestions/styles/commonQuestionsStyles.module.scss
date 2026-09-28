@@ -1,0 +1,69 @@
+@use "../../../../shared/styles/eyeBrowStyles" as *;
+@use "../../../../shared/styles/titlesStyles" as *;
+@use "../../../../shared/styles/var" as *;
+
+.faqSection {
+  padding: 7rem 0;
+  background-color: #f2f1ec;
+  & .faq-container {
+    max-width: 90rem;
+  }
+
+  & .faqTitle {
+    @include titleStyles($main-title-color, 1.2, 48, 20);
+    margin-bottom: 4rem;
+  }
+
+  & .faqEyebrow {
+    @include eyeBrowStyles;
+  }
+  & .faqList {
+    padding-inline: 0.5625rem;
+  }
+}
+.faqList {
+  width: 100%;
+
+  :global(.MuiAccordion-root) {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 0.0625rem solid rgba(21, 27, 40, 0.12);
+    border-radius: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  :global(.MuiAccordionSummary-root) {
+    min-height: 4.5rem;
+    padding: 0;
+
+    &:global(.Mui-expanded) {
+      min-height: 4.5rem;
+    }
+  }
+
+  :global(.MuiAccordionSummary-content) {
+    margin: 0;
+    &:global(.Mui-expanded) {
+      margin: 0;
+    }
+  }
+
+  :global(.MuiTypography-root) {
+    font-family: "Inter", sans-serif;
+    color: $main-title-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  :global(.MuiAccordionSummary-expandIconWrapper) {
+    color: #151b28;
+  }
+
+  :global(.MuiAccordionDetails-root) {
+    padding: 0 0 2rem;
+  }
+}

@@ -1,8 +1,12 @@
 import styles from "./styles/advantagesStyles.module.scss";
+import icon01 from "./icons/advantages-icon-01.svg"
+import icon02 from "./icons/advantages-icon-02.svg"
+import icon03 from "./icons/advantages-icon-03.svg"
+import icon04 from "./icons/advantages-icon-04.svg"
 function Advantages() {
   return (
     <section className={styles.advantagesSection}>
-      <div className={styles.advantagesContainer}>
+      <div className={styles["advantages-container"]}>
         <div className={styles.advantagesTextContainer}>
           <p className={styles.advantagesEyebrow}>About</p>
           <h2 className={styles.advantagesTitle}>Why Clients Choose Us</h2>
@@ -10,7 +14,7 @@ function Advantages() {
         <div className={styles.advantagesCardsContainer}>
           <article className={styles.advantagesCard}>
             <div className={styles.advantagesCardPictureContainer}>
-              <img src="./icons/advantages-icon-01.svg" alt="" className={styles.advantagesCardPicture} />
+              <img src={icon01} alt="" className={styles.advantagesCardPicture} />
             </div>
             <h3 className={styles.advantagesCardTitle}>IRATA Certified</h3>
             <p className={styles.advantagesCardText}>
@@ -20,7 +24,7 @@ function Advantages() {
           </article>
           <article className={styles.advantagesCard}>
             <div className={styles.advantagesCardPictureContainer}>
-              <img src="./icons/advantages-icon-02.svg" alt="" className={styles.advantagesCardPicture} />
+              <img src={icon02} alt="" className={styles.advantagesCardPicture} />
             </div>
             <h3 className={styles.advantagesCardTitle}>No Scaffolding Required</h3>
             <p className={styles.advantagesCardText}>
@@ -30,7 +34,7 @@ function Advantages() {
           </article>
           <article className={styles.advantagesCard}>
             <div className={styles.advantagesCardPictureContainer}>
-              <img src="./icons/advantages-icon-03.svg" alt="" className={styles.advantagesCardPicture} />
+              <img src={icon03} alt="" className={styles.advantagesCardPicture} />
             </div>
             <h3 className={styles.advantagesCardTitle}>International Operations</h3>
             <p className={styles.advantagesCardText}>
@@ -40,7 +44,7 @@ function Advantages() {
           </article>
           <article className={styles.advantagesCard}>
             <div className={styles.advantagesCardPictureContainer}>
-              <img src="./icons/advantages-icon-04.svg" alt="" className={styles.advantagesCardPicture} />
+              <img src={icon04} alt="" className={styles.advantagesCardPicture} />
             </div>
             <h3 className={styles.advantagesCardTitle}>Method-Led Approach</h3>
             <p className={styles.advantagesCardText}>

@@ -1,0 +1,76 @@
+@use "../../../../shared/styles/eyeBrowStyles" as *;
+@use "../../../../shared/styles/titlesStyles" as *;
+@use "../../../../shared/styles/var" as *;
+@use "../../../../shared/styles/sizeMixin" as *;
+
+.testimonialsSection {
+  padding: 7rem 0rem;
+  background: #fff;
+  & .testimonials-container {
+    max-width: 90rem;
+  }
+  & .testimonialsTitle {
+    @include titleStyles($main-title-color, 1, 48, 20);
+    margin-bottom: 4rem;
+  }
+  & .testimonialsEyebrow {
+    @include eyeBrowStyles;
+  }
+
+  & .testimonialsList {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.875rem;
+    padding-inline: 0.5625rem;
+    & .testimonialCard {
+      max-width: 22.1875rem;
+      padding: 2rem;
+      outline: 0.0625rem solid rgba(21, 27, 40, 0.1);
+      & .ratingElements {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 0.125rem;
+        max-width: 5rem;
+        margin-bottom: 1.5rem;
+        & .ratingElement {
+          height: 0.875rem;
+          width: 0.875rem;
+          background-image: url("../../../../shared/pictures/icons/star.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      & .testimonialCardLine {
+        margin-bottom: 1.5rem;
+        height: 0.0625rem;
+        width: 100%;
+        background-color: rgba(21, 27, 40, 0.1);
+      }
+      & .testimonialQuote {
+        margin-bottom: 2rem;
+        color: #151b28;
+        @include adaptiveValue("font-size", 14, 10);
+        font-weight: 400;
+        line-height: 1.6;
+      }
+      & .testimonialAuthor {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.125rem;
+        & .authorName {
+          color: $main-title-color;
+          @include adaptiveValue("font-size", 14, 10);
+          font-weight: 600;
+          line-height: 1.4;
+          font-style: normal;
+        }
+        & .authorRole {
+          color: $text-primary;
+          font-weight: 400;
+          @include adaptiveValue("font-size", 14, 8);
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}

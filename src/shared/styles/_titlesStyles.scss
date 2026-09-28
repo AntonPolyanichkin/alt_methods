@@ -1,0 +1,11 @@
+@use "./sizeMixin" as *;
+@mixin titleStyles($color, $line-height,$startSize,$endSize ){
+   color: $color;
+    @include adaptiveValue("font-size", $startSize, $endSize);
+    font-weight: 600;
+    line-height: $line-height;
+    letter-spacing: -0.1125rem;
+    @media (max-width: toEm($mobile)) {
+      letter-spacing: -0.05625rem;
+    }
+}

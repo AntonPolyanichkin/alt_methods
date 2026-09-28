@@ -2,6 +2,7 @@
 .card {
   max-width: 23.3125rem;
   background: #fff;
+  outline: .125rem solid #f2f1ec;
   & .textContainer {
     padding: 1.75rem;
   }
@@ -53,7 +54,7 @@
     & .picture {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
         filter: grayscale(0%) brightness(100%);
   transition: filter 0.5s ease;
     }
@@ -66,5 +67,5 @@
         }
       }
     }
-  }
+  } //тут ще думаю, бо сама по собі картинка нікуди не веде, а тому інтерактивність додавати не дуже доцільно
 }

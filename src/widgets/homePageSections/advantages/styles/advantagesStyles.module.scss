@@ -1,0 +1,52 @@
+@use "../../../../shared/styles/sizeMixin" as *;
+@use "../../../../shared/styles/eyeBrowStyles" as *;
+@use "../../../../shared/styles/titlesStyles" as *;
+@use "../../../../shared/styles/var" as *;
+
+.advantagesSection {
+  background-color: #fff;
+  padding: 7rem 0;
+  & .advantages-container {
+    max-width: 90rem;
+    & .advantagesTitle {
+      @include titleStyles($main-title-color, 1, 48, 20);
+      margin-bottom: 4rem;
+    }
+    & .advantagesEyebrow {
+      @include eyeBrowStyles;
+    }
+    & .advantagesCardsContainer {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 3.125rem;
+      padding: 0 0.5625rem;
+      & .advantagesCard {
+        max-width: 15rem;
+        & .advantagesCardPictureContainer {
+          height: 2.6875rem;
+          width: 2.6875rem;
+          aspect-ratio: 1 / 1;
+          margin-bottom: 1.5rem;
+          & .advantagesCardPicture {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+        & .advantagesCardTitle {
+          margin-bottom: 0.75rem;
+          font-weight: 600;
+
+          line-height: 1.5;
+          color: $main-title-color;
+        }
+        & .advantagesCardText {
+          @include adaptiveValue("font-size", 14, 8);
+          font-weight: 400;
+          line-height: 1.6;
+          color: $text-primary;
+        }
+      }
+    }
+  }
+}
