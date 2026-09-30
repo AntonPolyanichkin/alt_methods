@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 import Header from "@/widgets/header/Header";
 import { DEFAULT_LANG, SUPPORTED_LANGS } from "../i18n/langs";
 import Footer from "@/widgets/footer/Footer";
+import styles from "../../shared/styles/index.module.scss";
+
 export default function MainLayout() {
   const { lang } = useParams();
   const { i18n } = useTranslation();
@@ -22,7 +24,7 @@ export default function MainLayout() {
 
   return (
     <>
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <Header />
         <main>
           <Outlet context={{ lang }} />

@@ -1,6 +1,7 @@
 @use "_reset.scss";
 @use "_var.scss" as *;
 
+
 body {
   font-family: "Inter", sans-serif;
   // &.scroll-lock {
@@ -8,15 +9,15 @@ body {
   // 	touch-action: none;
   // 	overscroll-behavior: none;
   // }
-}
-
-.wrapper {
-  overflow: clip;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  & main {
-    flex-grow: 1;
+  & .wrapper {
+    overflow: clip;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    & main {
+      flex-grow: 1;
+    }
   }
 }
 

@@ -2,79 +2,89 @@ import { Link } from "react-router";
 import styles from "./styles/footerStyles.module.scss";
 function Footer() {
   return (
-    <footer>
-      <div>
-        <div>
-          <div>
-            <h2>Altmethods</h2>
-            <p>
+    <footer className={styles.footer}>
+      <div className={styles["footer-container"]}>
+        <div className={styles.footerTop}>
+          <div className={styles.footerBrand}>
+            <h2 className={styles.footerBrandName}>Altmethods</h2>
+            <p className={styles.footerTagline}>
               Precision at height.
               <br />
               Engineering on the ground.
             </p>
           </div>
-          <div>
-            <h3>Services</h3>
-            <ul>
+
+          <div className={styles.footerColumn}>
+            <h3 className={styles.footerColumnTitle}>Services</h3>
+            <ul className={styles.footerLinksList}>
               <li>
-                <Link>Facade Repair</Link>
+                {/* TODO: усім Link нижче бракує to — навігація поки нікуди не веде */}
+                <Link className={styles.footerLink}>Facade Repair</Link>
               </li>
               <li>
-                <Link>Sealing & Waterproofing</Link>
+                <Link className={styles.footerLink}>Sealing &amp; Waterproofing</Link>
               </li>
               <li>
-                <Link>Roof Repair</Link>
+                <Link className={styles.footerLink}>Roof Repair</Link>
               </li>
               <li>
-                <Link>Painting</Link>
+                <Link className={styles.footerLink}>Painting</Link>
               </li>
               <li>
-                <Link>Structure Installation</Link>
+                <Link className={styles.footerLink}>Structure Installation</Link>
               </li>
               <li>
-                <Link>Construction Works</Link>
+                <Link className={styles.footerLink}>Construction Works</Link>
               </li>
               <li>
-                <Link>Building Maintenance</Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Company</h3>
-            <ul>
-              <li>
-                <Link>About</Link>
-              </li>
-              <li>
-                <Link>Portfolio</Link>
-              </li>
-              <li>
-                <Link>Contacts</Link>
+                <Link className={styles.footerLink}>Building Maintenance</Link>
               </li>
             </ul>
           </div>
-          <div>
-            <h3>Contact</h3>
-            <ul>
+
+          <div className={styles.footerColumn}>
+            <h3 className={styles.footerColumnTitle}>Company</h3>
+            <ul className={styles.footerLinksList}>
               <li>
-                <a href="">Pärnu mnt 18, 10141 Tallinn, Estonia</a>
+                <Link className={styles.footerLink}>About</Link>
               </li>
               <li>
-                <a href="tel:+37251234567">+372 5123 4567</a>
+                <Link className={styles.footerLink}>Portfolio</Link>
               </li>
               <li>
-                <a href="mailto:info@alpkon.ee">info@alpkon.ee</a>
+                <Link className={styles.footerLink}>Contacts</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.footerColumn}>
+            <h3 className={styles.footerColumnTitle}>Contact</h3>
+            <ul className={styles.footerLinksList}>
+              <li>
+                {/*  тут як варіант додати лінк на гугл мапс */}
+                <span className={styles.footerLink}>Pärnu mnt 18, 10141 Tallinn, Estonia</span>
+              </li>
+              <li>
+                <a className={styles.footerLink} href="tel:+37251234567">
+                  +372 5123 4567
+                </a>
+              </li>
+              <li>
+                <a className={styles.footerLink} href="mailto:info@alpkon.ee">
+                  info@alpkon.ee
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <div>
-          <div>
-            <p>Reg. no. !потрібен номер!</p>
-            <p>VAT потрібен номер платника податків</p>
-            <p>&copy; 2024 Altmethods. All rights reserved</p>
+
+        <div className={styles.footerBottom}>
+          <div className={styles.footerLegal}>
+            <p className={styles.footerLegalItem}>Reg. no. !потрібен номер!</p>
+            <p className={styles.footerLegalItem}>VAT потрібен номер платника податків</p>
+            <p className={styles.footerLegalItem}>&copy; 2024 Altmethods. All rights reserved</p>
           </div>
-          <div></div>
+         
         </div>
       </div>
     </footer>
