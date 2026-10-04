@@ -1,20 +1,21 @@
 import { Link } from "react-router";
 import styles from "./styles/selectedProjectsStyles.module.scss";
 import picture from "./pictures/Image (Ülemiste City Office Tower).png";
+import { useTranslation } from "react-i18next";
 function SelectedProjects() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.selectedProgectsSection}>
       <div className={styles["selected-progects-container"]}>
         <div className={styles.selectedProgectsText}>
           <div className={styles.selectedProgectsMainText}>
-            <p className={styles.selectedProgectsEyebrow}>Portfolio</p>
-            <h2 className={styles.selectedProgectsTitle}>Selected Projects</h2>
+            <p className={styles.selectedProgectsEyebrow}>{t("selectedProjects.eyebrow")}</p>
+            <h2 className={styles.selectedProgectsTitle}>{t("selectedProjects.title")}</h2>
           </div>
           <div className={styles.selectedProgectsDescriptionContainer}>
-            <p className={styles.selectedProgectsDescriptionText}>
-              A selection of recent works across Estonia and internationally.
-            </p>
-            <Link className={styles.selectedProgectsDescriptionLink}>View All Projects </Link>
+            <p className={styles.selectedProgectsDescriptionText}>{t("selectedProjects.description")}</p>
+            <Link className={styles.selectedProgectsDescriptionLink}>{t("selectedProjects.viewAllLink")}</Link>
           </div>
         </div>
         <div className={styles.selectedProgectsCardsContianer}>
@@ -25,7 +26,7 @@ function SelectedProjects() {
             <div className={styles.selectedProgectsCardTag}>
               <p>Facade Repair</p>
             </div>
-            <p className={styles.selectedProgectsCardLocation}>Tallinn, Estonia</p>
+            <p className={styles.selectedProgectsCardLocation}>{t("projectCard.ulemisteTower.location")}</p>
             <h3 className={styles.selectedProgectsCardTitle}>Ülemiste City Office Tower</h3>
           </article>
           <article className={styles.selectedProgectsCard}>
@@ -35,7 +36,7 @@ function SelectedProjects() {
             <div className={styles.selectedProgectsCardTag}>
               <p>Facade Repair</p>
             </div>
-            <p className={styles.selectedProgectsCardLocation}>Tallinn, Estonia</p>
+            <p className={styles.selectedProgectsCardLocation}>{t("projectCard.ulemisteTower.location")}</p>
             <h3 className={styles.selectedProgectsCardTitle}>Ülemiste City Office Tower</h3>
           </article>
           <article className={styles.selectedProgectsCard}>
@@ -45,7 +46,7 @@ function SelectedProjects() {
             <div className={styles.selectedProgectsCardTag}>
               <p>Facade Repair</p>
             </div>
-            <p className={styles.selectedProgectsCardLocation}>Tallinn, Estonia</p>
+            <p className={styles.selectedProgectsCardLocation}>{t("projectCard.ulemisteTower.location")}</p>
             <h3 className={styles.selectedProgectsCardTitle}>Ülemiste City Office Tower</h3>
           </article>
         </div>

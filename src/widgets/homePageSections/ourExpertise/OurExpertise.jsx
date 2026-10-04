@@ -1,36 +1,33 @@
+import { useTranslation } from "react-i18next";
 import styles from "./styles/ourExpertiseStyles.module.scss";
 function OurExpertise() {
+  const { t } = useTranslation();
   return (
     <section className={styles.expertiseSection}>
       <div className={styles["expertise-container"]}>
-       <div className={styles.contentContainer}>
-         <div className={styles.expertiseContent}>
-          <h2 className={styles.expertiseTitle}>
-            Built on Expertise. <br /> Trusted Internationally.
-          </h2>
-          <p className={styles.expertiseText}>
-            Founded in Tallinn, Altmethods operates as a serious engineering contractor — not a niche climbing service. We
-            hold IRATA rope access certification, comply with EN 365 and ISO 22846 safety standards, and carry full
-            professional indemnity insurance. Our crews have completed projects in 14 countries, delivering to the same
-            rigorous standard regardless of location.
-          </p>
-        </div>
+        <div className={styles.contentContainer}>
+          <div className={styles.expertiseContent}>
+            <h2 className={styles.expertiseTitle}>
+              {t("expertise.titleLine1")} <br /> {t("expertise.titleLine2")}
+            </h2>
+            <p className={styles.expertiseText}>{t("expertise.text")}</p>
+          </div>
 
-        <ul className={styles.credentialsList}>
-          <li className={styles.credentialItem}>
-            <span>IRATA Certified</span>
-          </li>
-          <li className={styles.credentialItem}>
-            <span>EN 365 / ISO 22846</span>
-          </li>
-          <li className={styles.credentialItem}>
-            <span>Fully Insured</span>
-          </li>
-          <li className={styles.credentialItem}>
-            <span>14 Countries</span>
-          </li>
-        </ul>
-       </div>
+          <ul className={styles.credentialsList}>
+            <li className={styles.credentialItem}>
+              <span>{t("expertise.credentials.irata")}</span>
+            </li>
+            <li className={styles.credentialItem}>
+              <span>{t("expertise.credentials.standards")}</span>
+            </li>
+            <li className={styles.credentialItem}>
+              <span>{t("expertise.credentials.insured")}</span>
+            </li>
+            <li className={styles.credentialItem}>
+              <span>{t("expertise.credentials.countries")}</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

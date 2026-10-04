@@ -1,18 +1,21 @@
 import styles from "./styles/commonQuestionsStyles.module.scss";
 import AddIcon from "@mui/icons-material/Add";
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 function CommonQuestions() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.faqSection}>
       <div className={styles["faq-container"]}>
-        <p className={styles.faqEyebrow}>FAQ</p>
-        <h2 className={styles.faqTitle}>Common Questions</h2>
+        <p className={styles.faqEyebrow}> {t("faq.eyebrow")}</p>
+        <h2 className={styles.faqTitle}>{t("faq.title")}</h2>
 
         <div className={styles.faqList}>
           <Accordion>
             <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              <Typography className={styles.heading}>What is rope access, and when is it used?</Typography>
+              <Typography className={styles.heading}>{t("faq.questions.ropeAccessWhat")}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -23,7 +26,7 @@ function CommonQuestions() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              <Typography className={styles.heading}>Is rope access safe?</Typography>
+              <Typography className={styles.heading}>{t("faq.questions.ropeAccessSafe")}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -34,7 +37,7 @@ function CommonQuestions() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              <Typography className={styles.heading}>Do you work outside Estonia?</Typography>
+              <Typography className={styles.heading}>{t("faq.questions.outsideEstonia")}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -45,7 +48,7 @@ function CommonQuestions() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              <Typography className={styles.heading}>How quickly can you mobilise?</Typography>
+              <Typography className={styles.heading}>{t("faq.questions.mobilise")}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -56,7 +59,7 @@ function CommonQuestions() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              <Typography className={styles.heading}>What does the quotation include?</Typography>
+              <Typography className={styles.heading}>{t("faq.questions.quotationIncludes")}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -67,7 +70,7 @@ function CommonQuestions() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<AddIcon />} aria-controls="panel1a-content" id="panel1a-header">
-              <Typography className={styles.heading}>What size projects do you take on?</Typography>
+              <Typography className={styles.heading}>{t("faq.questions.projectSize")}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>

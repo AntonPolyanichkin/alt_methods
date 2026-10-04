@@ -1,7 +1,8 @@
-import styles from "./styles/contactsStyles.module.scss"
+import GetQuote from "@/widgets/homePageSections/getQuote/GetQuote";
+import styles from "./styles/contactsStyles.module.scss";
 
 function Contacts() {
-  return ( <h1>Contacts</h1> );
+  return <GetQuote />;
 }
 
 export default Contacts;

@@ -1,13 +1,57 @@
+// @use "../../../../shared/styles/_var.scss" as *;
+// @use "../../../../shared/styles/eyeBrowStyles" as *;
+// @use "../../../../shared/styles/titlesStyles" as *;
+// .services {
+//   padding-block: 7rem;
+//   background-color: #f2f1ec;
+
+//   & .services-container {
+//     max-width: 90rem;
+//   }
+//   & .contentContainer {
+//     padding-inline: 0.5625rem;
+//   }
+
+//   & .textContainer {
+//     max-width: 42rem;
+//     margin-bottom: 4rem;
+//     & .titleEyebrow {
+//    @include eyeBrowStyles;
+//     }
+//     & .title {
+//       @include titleStyles($main-title-color,1.2,48,20)
+//     }
+//     & .text {
+//       color: $text-primary;
+//       font-size: 1.125rem;
+//       font-weight: 400;
+//       line-height: 1.6;
+//     }
+//   }
+//   & .cardContainer {
+//     display: flex;
+//     max-width: 70rem;
+//     margin: 0 auto;
+//     flex-wrap: wrap;
+//     background-color: rgba(21, 27, 40, 0.1);
+
+//   }
+// }
+
 @use "../../../../shared/styles/_var.scss" as *;
 @use "../../../../shared/styles/eyeBrowStyles" as *;
 @use "../../../../shared/styles/titlesStyles" as *;
+@use "../../../../shared/styles/sizeMixin" as *;
+
 .services {
   padding-block: 7rem;
   background-color: #f2f1ec;
 
   & .services-container {
     max-width: 90rem;
+    margin: 0 auto;
   }
+
   & .contentContainer {
     padding-inline: 0.5625rem;
   }
@@ -15,12 +59,15 @@
   & .textContainer {
     max-width: 42rem;
     margin-bottom: 4rem;
+
     & .titleEyebrow {
-   @include eyeBrowStyles;
+      @include eyeBrowStyles;
     }
+
     & .title {
-      @include titleStyles($main-title-color,1.2,48,20)
+      @include titleStyles($main-title-color, 1.2, 48, 20);
     }
+
     & .text {
       color: $text-primary;
       font-size: 1.125rem;
@@ -28,12 +75,42 @@
       line-height: 1.6;
     }
   }
+
   & .cardContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 70rem;
     margin: 0 auto;
-    flex-wrap: wrap;
     background-color: rgba(21, 27, 40, 0.1);
-    
+  }
+
+  @media (max-width: toEm($tablet)) {
+    padding-block: 5rem;
+
+    & .cardContainer {
+      grid-template-columns: repeat(2, 1fr);
+      background-color: unset;
+    }
+  }
+
+  @media (max-width: toEm($mobile)) {
+    padding-block: 4rem;
+
+    & .contentContainer {
+      padding-inline: 1rem;
+    }
+
+    & .textContainer {
+      margin-bottom: 2.5rem;
+
+      & .text {
+        font-size: 1rem;
+      }
+    }
+
+    & .cardContainer {
+      grid-template-columns: 1fr;
+      row-gap: .625rem;
+    }
   }
 }

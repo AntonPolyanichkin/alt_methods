@@ -1,5 +1,6 @@
 import { useId } from "react";
 import styles from "./styles/getQuoteStyles.module.scss";
+import { useTranslation } from "react-i18next";
 
 function GetQuote() {
   const nameFormId = useId();
@@ -9,32 +10,40 @@ function GetQuote() {
   const serviceFormId = useId();
   const projectDescriptionFormId = useId();
   const processingData = useId();
+  const { t } = useTranslation();
 
   return (
     <section className={styles.getQuoteSection}>
       <div className={styles["getQuote-container"]}>
         <div className={styles.formColumn}>
           <div className={styles.formIntro}>
-            <p className={styles.eyebrow}>Contact</p>
-            <h2 className={styles.title}>Request a Quote</h2>
-            <p className={styles.subtitle}>Describe your project and we will respond within one business day.</p>
+            <p className={styles.eyebrow}>{t("getQuote.eyebrow")}</p>
+            <h2 className={styles.title}>{t("getQuote.title")}</h2>
+            <p className={styles.subtitle}>{t("getQuote.subtitle")}</p>
           </div>
 
           <form className={styles.form}>
             <div className={styles.formGrid}>
               <div className={styles.formRow}>
                 <div className={styles.formField}>
-                  <label htmlFor={nameFormId}>Name *</label>
-                  <input className={styles.input} name="name" id={nameFormId} type="text" placeholder="name" required />
+                  <label htmlFor={nameFormId}>{t("getQuote.form.nameLabel")}</label>
+                  <input
+                    className={styles.input}
+                    name="name"
+                    id={nameFormId}
+                    type="text"
+                    placeholder={t("getQuote.form.namePlaceholder")}
+                    required
+                  />
                 </div>
                 <div className={styles.formField}>
-                  <label htmlFor={emailFormId}>Email *</label>
+                  <label htmlFor={emailFormId}>{t("getQuote.form.emailLabel")}</label>
                   <input
                     className={styles.input}
                     name="email"
                     id={emailFormId}
                     type="email"
-                    placeholder="email"
+                    placeholder={t("getQuote.form.emailPlaceholder")}
                     required
                   />
                 </div>
@@ -42,20 +51,20 @@ function GetQuote() {
 
               <div className={styles.formRow}>
                 <div className={styles.formField}>
-                  <label htmlFor={companyFormId}>Company (optional)</label>
+                  <label htmlFor={companyFormId}>{t("getQuote.form.companyLabel")}</label>
                   <input
                     className={styles.input}
                     name="company"
                     id={companyFormId}
                     type="text"
-                    placeholder="company name"
+                    placeholder={t("getQuote.form.companyPlaceholder")}
                   />
                 </div>
                 <div className={styles.formField}>
-                  <label htmlFor={phoneFormId}>Phone *</label>
+                  <label htmlFor={phoneFormId}>{t("getQuote.form.phoneLabel")}</label>
                   <input
                     className={styles.input}
-                    name="phone"
+                    name={t("getQuote.form.phonePlaceholder")}
                     id={phoneFormId}
                     type="tel"
                     placeholder="phone"
@@ -65,24 +74,24 @@ function GetQuote() {
               </div>
 
               <div className={styles.formField}>
-                <label htmlFor={serviceFormId}>Service Required *</label>
+                <label htmlFor={serviceFormId}>{t("getQuote.form.serviceLabel")}</label>
                 <input
                   className={styles.input}
                   name="service"
                   id={serviceFormId}
                   type="text"
-                  placeholder="service"
+                  placeholder={t("getQuote.form.servicePlaceholder")}
                   required
                 />
               </div>
 
               <div className={styles.formField}>
-                <label htmlFor={projectDescriptionFormId}>Project Description *</label>
+                <label htmlFor={projectDescriptionFormId}>{t("getQuote.form.descriptionLabel")}</label>
                 <textarea
                   className={styles.textarea}
                   name="project-description"
                   id={projectDescriptionFormId}
-                  placeholder="Project Description"
+                  placeholder={t("getQuote.form.descriptionPlaceholder")}
                   required
                 ></textarea>
               </div>
@@ -96,12 +105,12 @@ function GetQuote() {
                   required
                 />
                 <label htmlFor={processingData} className={styles.consentLabel}>
-                  I consent to the processing of my personal data for the purpose of receiving a quotation.
+                  {t("getQuote.form.consentLabel")}{" "}
                 </label>
               </div>
 
               <button type="submit" className={styles.submitBtn}>
-                Send Request
+                {t("getQuote.form.submitBtn")}
                 <span className={styles.submitArrow} aria-hidden="true" />
               </button>
             </div>
@@ -109,43 +118,39 @@ function GetQuote() {
         </div>
 
         <aside className={styles.sidebar}>
-          <h3 className={styles.sidebarTitle}>Contact Information</h3>
+          <h3 className={styles.sidebarTitle}>{t("getQuote.sidebar.title")}</h3>
           <ul className={styles.contactList}>
             <li className={styles.contactItem}>
               <span className={styles.contactIcon} aria-hidden="true" />
               <div>
-                <h4 className={styles.contactLabel}>Office</h4>
-                <p className={styles.contactValue}>Pärnu mnt 18, 10141 Tallinn, Estonia</p>
+                <h4 className={styles.contactLabel}>{t("getQuote.sidebar.officeLabel")}</h4>
+                {/* <p className={styles.contactValue}>Pärnu mnt 18, 10141 Tallinn, Estonia</p> */}
+                <address className={styles.contactValue}>Pärnu mnt 18, 10141 Tallinn, Estonia</address>
               </div>
             </li>
             <li className={styles.contactItem}>
               <span className={styles.contactIcon} aria-hidden="true" />
               <div>
-                <h4 className={styles.contactLabel}>Phone</h4>
+                <h4 className={styles.contactLabel}>{t("getQuote.sidebar.phoneLabel")}</h4>
                 <p className={styles.contactValue}>+372 5123 4567</p>
               </div>
             </li>
             <li className={styles.contactItem}>
               <span className={styles.contactIcon} aria-hidden="true" />
               <div>
-                <h4 className={styles.contactLabel}>Email</h4>
-                <p className={styles.contactValue}>info@alpkon.ee</p>
+                <h4 className={styles.contactLabel}>{t("getQuote.sidebar.emailLabel")}</h4>
+                <p className={styles.contactValue}>info@alpkon.ee (внести справжню пошту)</p>
               </div>
             </li>
           </ul>
 
           <div className={styles.responseTime}>
-            <h4 className={styles.responseTimeLabel}>Response Time</h4>
-            <p className={styles.responseTimeText}>
-              We respond to all enquiries within one business day. For urgent works, please call directly.
-            </p>
+            <h4 className={styles.responseTimeLabel}>{t("getQuote.sidebar.responseTimeLabel")}</h4>
+            <p className={styles.responseTimeText}>{t("getQuote.sidebar.responseTimeText")}</p>
           </div>
 
           <div className={styles.credentialNote}>
-            <p className={styles.credentialText}>
-              All our technicians hold current IRATA international rope access certification. Full liability insurance
-              on every project.
-            </p>
+            <p className={styles.credentialText}>{t("getQuote.sidebar.credentialText")}</p>
           </div>
         </aside>
       </div>

@@ -1,28 +1,101 @@
+// @use "../../../../shared/styles/titlesStyles" as *;
+// @use "../../../../shared/styles/sizeMixin" as *;
+// @use "../../../../shared/styles/var" as *;
+
+// .expertiseSection {
+//   padding: 7rem 0;
+//   background-color: #151b28;
+//   & .expertise-container {
+//     max-width: 90rem;
+//     & .contentContainer {
+//       display: flex;
+//       justify-content: space-between;
+//       column-gap: 3.75rem;
+//       max-width: 70.375rem;
+//       & .expertiseContent {
+//         max-width: 32.5rem;
+//       }
+//       & .expertiseTitle {
+//         @include titleStyles(#f2f1ec, 1.2, 48, 20);
+//         margin-bottom: 2rem;
+//       }
+//       & .expertiseText {
+//         font-size: 18px;
+//         font-weight: 400;
+//         @include adaptiveValue("font-size", 18, 10);
+//         line-height: 1.6;
+//         color: $text-primary;
+//       }
+//       & .credentialsList {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         row-gap: 0.625rem;
+//         max-width: 32.5rem;
+//         & .credentialItem {
+//           display: flex;
+//           column-gap: 1.25rem;
+//           align-items: center;
+//           padding-bottom: 1.5rem;
+//           border-bottom: 0.0625rem solid rgba(242, 241, 236, 0.1);
+//           width: 100%;
+//           & span {
+//             color: #f2f1ec;
+//             @include adaptiveValue("font-size", 18, 10);
+//             font-weight: 500;
+//             line-height: 1.5;
+//           }
+//           &::before {
+//             content: "";
+//             width: 2rem;
+//             height: 2rem;
+//             background: url("../icons/our-expertise-icon.svg");
+//             background-repeat: no-repeat;
+//             background-size: contain;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
 @use "../../../../shared/styles/titlesStyles" as *;
 @use "../../../../shared/styles/sizeMixin" as *;
 @use "../../../../shared/styles/var" as *;
 
 .expertiseSection {
-  padding: 7rem 0;
+  @include adaptiveValue("padding-block", 112, 48);
   background-color: #151b28;
+
   & .expertise-container {
     max-width: 90rem;
     & .contentContainer {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       column-gap: 3.75rem;
+      row-gap: 3rem;
       max-width: 70.375rem;
+
+      // Дві колонки поруч не влазять на планшеті — стовпчиком
+      @media (max-width: toEm($tablet)) {
+        flex-direction: column;
+      }
+
       & .expertiseContent {
         max-width: 32.5rem;
+
+        @media (max-width: toEm($tablet)) {
+          max-width: 100%;
+        }
       }
       & .expertiseTitle {
         @include titleStyles(#f2f1ec, 1.2, 48, 20);
         margin-bottom: 2rem;
       }
       & .expertiseText {
-        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 14);
         font-weight: 400;
-        @include adaptiveValue("font-size", 18, 10);
         line-height: 1.6;
         color: $text-primary;
       }
@@ -32,6 +105,11 @@
         justify-content: space-between;
         row-gap: 0.625rem;
         max-width: 32.5rem;
+
+        @media (max-width: toEm($tablet)) {
+          max-width: 100%;
+        }
+
         & .credentialItem {
           display: flex;
           column-gap: 1.25rem;
@@ -41,12 +119,13 @@
           width: 100%;
           & span {
             color: #f2f1ec;
-            @include adaptiveValue("font-size", 18, 10);
+            @include adaptiveValue("font-size", 18, 14);
             font-weight: 500;
             line-height: 1.5;
           }
           &::before {
             content: "";
+            flex-shrink: 0; // щоб іконка не стискалась, якщо текст перенесеться
             width: 2rem;
             height: 2rem;
             background: url("../icons/our-expertise-icon.svg");

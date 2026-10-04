@@ -1,56 +1,46 @@
 import styles from "./styles/advantagesStyles.module.scss";
-import icon01 from "./icons/advantages-icon-01.svg"
-import icon02 from "./icons/advantages-icon-02.svg"
-import icon03 from "./icons/advantages-icon-03.svg"
-import icon04 from "./icons/advantages-icon-04.svg"
+import icon01 from "./icons/advantages-icon-01.svg";
+import icon02 from "./icons/advantages-icon-02.svg";
+import icon03 from "./icons/advantages-icon-03.svg";
+import icon04 from "./icons/advantages-icon-04.svg";
+import { useTranslation } from "react-i18next";
 function Advantages() {
+  const { t } = useTranslation();
   return (
     <section className={styles.advantagesSection}>
       <div className={styles["advantages-container"]}>
         <div className={styles.advantagesTextContainer}>
-          <p className={styles.advantagesEyebrow}>About</p>
-          <h2 className={styles.advantagesTitle}>Why Clients Choose Us</h2>
+          <p className={styles.advantagesEyebrow}>{t("advantages.eyebrow")}</p>
+          <h2 className={styles.advantagesTitle}>{t("advantages.title")}</h2>
         </div>
         <div className={styles.advantagesCardsContainer}>
           <article className={styles.advantagesCard}>
             <div className={styles.advantagesCardPictureContainer}>
               <img src={icon01} alt="" className={styles.advantagesCardPicture} />
             </div>
-            <h3 className={styles.advantagesCardTitle}>IRATA Certified</h3>
-            <p className={styles.advantagesCardText}>
-              All technicians hold current IRATA international rope access certification — the industry benchmark for
-              safety and technical competency at height.
-            </p>
+            <h3 className={styles.advantagesCardTitle}>{t("advantages.cards.irata.title")}</h3>
+            <p className={styles.advantagesCardText}>{t("advantages.cards.irata.text")}</p>
           </article>
           <article className={styles.advantagesCard}>
             <div className={styles.advantagesCardPictureContainer}>
               <img src={icon02} alt="" className={styles.advantagesCardPicture} />
             </div>
-            <h3 className={styles.advantagesCardTitle}>No Scaffolding Required</h3>
-            <p className={styles.advantagesCardText}>
-              Faster mobilisation, lower overall cost, and minimal disruption to occupants. Especially effective on
-              tall, complex, or occupied buildings.
-            </p>
+            <h3 className={styles.advantagesCardTitle}>{t("advantages.cards.noScaffolding.title")}</h3>
+            <p className={styles.advantagesCardText}>{t("advantages.cards.noScaffolding.text")}</p>
           </article>
           <article className={styles.advantagesCard}>
             <div className={styles.advantagesCardPictureContainer}>
               <img src={icon03} alt="" className={styles.advantagesCardPicture} />
             </div>
-            <h3 className={styles.advantagesCardTitle}>International Operations</h3>
-            <p className={styles.advantagesCardText}>
-              Projects completed across 14 countries. We manage all cross-border logistics, compliance documentation,
-              and legal requirements.
-            </p>
+            <h3 className={styles.advantagesCardTitle}>{t("advantages.cards.international.title")}</h3>
+            <p className={styles.advantagesCardText}>{t("advantages.cards.international.text")}</p>
           </article>
           <article className={styles.advantagesCard}>
             <div className={styles.advantagesCardPictureContainer}>
               <img src={icon04} alt="" className={styles.advantagesCardPicture} />
             </div>
-            <h3 className={styles.advantagesCardTitle}>Method-Led Approach</h3>
-            <p className={styles.advantagesCardText}>
-              Every project begins with a site assessment, written risk assessment, and method statement — before a
-              single rope is rigged.
-            </p>
+            <h3 className={styles.advantagesCardTitle}>{t("advantages.cards.methodLed.title")}</h3>
+            <p className={styles.advantagesCardText}>{t("advantages.cards.methodLed.text")}</p>
           </article>
         </div>
       </div>

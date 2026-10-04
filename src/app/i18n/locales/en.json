@@ -1,8 +1,8 @@
 {
   "header": {
-    "pictureAlt": "лого",
-    "closeMenu": "close menu",
-    "openMenu": "open menu"
+    "pictureAlt": "Logo",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu"
   },
   "menu": {
     "title": {
@@ -23,11 +23,142 @@
     "servicesBtn": "Our Services"
   },
   "companyStats": {
-  "ariaLabel": "Company statistics",
-  "projectsCompleted": "Projects Completed",
-  "yearsActive": "Years Active",
-  "certifiedTechnicians": "Certified Technicians",
-  "countriesServed": "Countries Served"
-},
-"companyClients": { "title": "Trusted by clients across Europe" }
+    "ariaLabel": "Company statistics",
+    "projectsCompleted": "Projects Completed",
+    "yearsActive": "Years Active",
+    "certifiedTechnicians": "Certified Technicians",
+    "countriesServed": "Countries Served"
+  },
+  "companyClients": {
+    "title": "Trusted by clients across Europe"
+  },
+  "servicesHero": {
+    "eyebrow": "Services",
+    "title": "What We Do",
+    "text": "Building maintenance and structural works — carried out with the access method best suited to each project."
+  },
+  "serviceCard": {
+    "facadeRepair": {
+      "title": "Facade Repair",
+      "text": "Crack injection, surface restoration, and panel replacement on any building type or height."
+    },
+    "learnMore": "Learn more"
+  },
+  "advantages": {
+    "eyebrow": "About",
+    "title": "Why Clients Choose Us",
+    "cards": {
+      "irata": {
+        "title": "IRATA Certified",
+        "text": "All technicians hold current IRATA international rope access certification — the industry benchmark for safety and technical competency at height."
+      },
+      "noScaffolding": {
+        "title": "No Scaffolding Required",
+        "text": "Faster mobilisation, lower overall cost, and minimal disruption to occupants. Especially effective on tall, complex, or occupied buildings."
+      },
+      "international": {
+        "title": "International Operations",
+        "text": "Projects completed across 14 countries. We manage all cross-border logistics, compliance documentation, and legal requirements."
+      },
+      "methodLed": {
+        "title": "Method-Led Approach",
+        "text": "Every project begins with a site assessment, written risk assessment, and method statement — before a single rope is rigged."
+      }
+    }
+  },
+  "selectedProjects": {
+    "eyebrow": "Portfolio",
+    "title": "Selected Projects",
+    "description": "A selection of recent works across Estonia and internationally.",
+    "viewAllLink": "View All Projects"
+  },
+  "projectCard": {
+    "ulemisteTower": {
+      "location": "Tallinn, Estonia"
+    }
+  },
+  "expertise": {
+    "titleLine1": "Built on Expertise.",
+    "titleLine2": "Trusted Internationally.",
+    "text": "Founded in Tallinn, Altmethods operates as a serious engineering contractor — not a niche climbing service. We hold IRATA rope access certification, comply with EN 365 and ISO 22846 safety standards, and carry full professional indemnity insurance. Our crews have completed projects in 14 countries, delivering to the same rigorous standard regardless of location.",
+    "credentials": {
+      "irata": "IRATA Certified",
+      "standards": "EN 365 / ISO 22846",
+      "insured": "Fully Insured",
+      "countries": "14 Countries"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Trusted by Clients Across Europe",
+    "title": "What Clients Say"
+  },
+  "testimonial": {
+    "sample": {
+      "quote": "Altmethods completed our 18-storey facade repair ahead of schedule with zero disruption to tenants. Professional, methodical, and technically excellent.",
+      "role": "Facility Manager, Technopolis Group"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Common Questions",
+    "questions": {
+      "ropeAccessWhat": "What is rope access, and when is it used?",
+      "ropeAccessSafe": "Is rope access safe?",
+      "outsideEstonia": "Do you work outside Estonia?",
+      "mobilise": "How quickly can you mobilise?",
+      "quotationIncludes": "What does the quotation include?",
+      "projectSize": "What size projects do you take on?"
+    }
+  },
+  "getQuote": {
+    "eyebrow": "Contact",
+    "title": "Request a Quote",
+    "subtitle": "Describe your project and we will respond within one business day.",
+    "form": {
+      "nameLabel": "Name *",
+      "namePlaceholder": "Name",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "Email",
+      "companyLabel": "Company (optional)",
+      "companyPlaceholder": "Company name",
+      "phoneLabel": "Phone *",
+      "phonePlaceholder": "Phone",
+      "serviceLabel": "Service Required *",
+      "servicePlaceholder": "Service",
+      "descriptionLabel": "Project Description *",
+      "descriptionPlaceholder": "Project description",
+      "consentLabel": "I consent to the processing of my personal data for the purpose of receiving a quotation.",
+      "submitBtn": "Send Request"
+    },
+    "sidebar": {
+      "title": "Contact Information",
+      "officeLabel": "Office",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "responseTimeLabel": "Response Time",
+      "responseTimeText": "We respond to all enquiries within one business day. For urgent works, please call directly.",
+      "credentialText": "All our technicians hold current IRATA international rope access certification. Full liability insurance on every project."
+    }
+  },
+  "footer": {
+    "tagline": {
+      "line1": "Precision at height.",
+      "line2": "Engineering on the ground."
+    },
+    "columnTitles": {
+      "services": "Services",
+      "company": "Company",
+      "contact": "Contact"
+    },
+    "services": {
+      "facadeRepair": "Facade Repair",
+      "sealingWaterproofing": "Sealing & Waterproofing",
+      "roofRepair": "Roof Repair",
+      "painting": "Painting",
+      "structureInstallation": "Structure Installation",
+      "constructionWorks": "Construction Works",
+      "buildingMaintenance": "Building Maintenance"
+    },
+    "copyright": "© 2024 Altmethods. All rights reserved."
+  }
 }

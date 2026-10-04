@@ -1,8 +1,8 @@
 {
   "header": {
-    "pictureAlt": "лого",
-    "closeMenu": "close menu",
-    "openMenu": "open menu"
+    "pictureAlt": "Logo",
+    "closeMenu": "Sulge menüü",
+    "openMenu": "Ava menüü"
   },
   "menu": {
     "title": {
@@ -23,11 +23,142 @@
     "servicesBtn": "Meie teenused"
   },
   "companyStats": {
-  "ariaLabel": "Ettevõtte statistika",
-  "projectsCompleted": "Valminud projektid",
-  "yearsActive": "Tegutsemisaastat",
-  "certifiedTechnicians": "Sertifitseeritud tehnikut",
-  "countriesServed": "Teenindatud riiki"
-},
-"companyClients": { "title": "Meid usaldavad kliendid üle Euroopa" }
+    "ariaLabel": "Ettevõtte statistika",
+    "projectsCompleted": "Valminud projektid",
+    "yearsActive": "Tegutsemisaastat",
+    "certifiedTechnicians": "Sertifitseeritud tehnikut",
+    "countriesServed": "Teenindatud riiki"
+  },
+  "companyClients": {
+    "title": "Meid usaldavad kliendid üle Euroopa"
+  },
+  "servicesHero": {
+    "eyebrow": "Teenused",
+    "title": "Mida me teeme",
+    "text": "Hoonete hooldus- ja ehitustööd — teostatuna iga projekti jaoks sobivaima ligipääsumeetodiga."
+  },
+  "serviceCard": {
+    "facadeRepair": {
+      "title": "Fassaadi remont",
+      "text": "Pragude süstimine, pinna taastamine ja paneelide vahetus mistahes tüüpi või kõrgusega hoonel."
+    },
+    "learnMore": "Loe lähemalt"
+  },
+  "advantages": {
+    "eyebrow": "Meist",
+    "title": "Miks kliendid valivad meid",
+    "cards": {
+      "irata": {
+        "title": "IRATA sertifikaat",
+        "text": "Kõik meie tehnikud omavad kehtivat IRATA rahvusvahelist rope access sertifikaati — tööstusharu standardit ohutuse ja tehnilise pädevuse osas kõrgustes töötamisel."
+      },
+      "noScaffolding": {
+        "title": "Tellinguid ei ole vaja",
+        "text": "Kiirem mobiliseerimine, madalam üldkulu ja minimaalne häirimine hoone kasutajatele. Eriti tõhus kõrgete, keeruliste või kasutuses olevate hoonete puhul."
+      },
+      "international": {
+        "title": "Rahvusvaheline tegevus",
+        "text": "Teostatud projektid 14 riigis. Korraldame kogu piiriülese logistika, nõuetele vastavuse dokumentatsiooni ja juriidilised nõuded."
+      },
+      "methodLed": {
+        "title": "Metoodikale tuginev lähenemine",
+        "text": "Iga projekt algab objekti hindamisega, kirjaliku riskihinnanguga ja töömeetodi kirjeldusega — enne kui ükski köis üles seatakse."
+      }
+    }
+  },
+  "selectedProjects": {
+    "eyebrow": "Portfoolio",
+    "title": "Valitud projektid",
+    "description": "Valik hiljutisi töid üle Eesti ja rahvusvaheliselt.",
+    "viewAllLink": "Vaata kõiki projekte"
+  },
+  "projectCard": {
+    "ulemisteTower": {
+      "location": "Tallinn, Eesti"
+    }
+  },
+  "expertise": {
+    "titleLine1": "Ehitatud asjatundlikkusele.",
+    "titleLine2": "Usaldatud rahvusvaheliselt.",
+    "text": "Tallinnas asutatud Altmethods tegutseb tõsise inseneriettevõttena — mitte nišikliimbamisteenusena. Meil on IRATA rope access sertifikaat, vastame EN 365 ja ISO 22846 ohutusstandarditele ning meil on täielik kutsekindlustus. Meie meeskonnad on teostanud projekte 14 riigis, säilitades sama ranget standardit sõltumata asukohast.",
+    "credentials": {
+      "irata": "IRATA sertifikaat",
+      "standards": "EN 365 / ISO 22846",
+      "insured": "Täielikult kindlustatud",
+      "countries": "14 riiki"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Meid usaldavad kliendid üle Euroopa",
+    "title": "Mida kliendid ütlevad"
+  },
+  "testimonial": {
+    "sample": {
+      "quote": "Altmethods teostas meie 18-korruselise hoone fassaadiremondi enne tähtaega, häirimata seejuures üürnikke. Professionaalne, metoodiline ja tehniliselt suurepärane.",
+      "role": "Kinnisvarahaldur, Technopolis Group"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Korduma kippuvad küsimused",
+    "questions": {
+      "ropeAccessWhat": "Mis on rope access ja millal seda kasutatakse?",
+      "ropeAccessSafe": "Kas rope access on ohutu?",
+      "outsideEstonia": "Kas töötate ka väljaspool Eestit?",
+      "mobilise": "Kui kiiresti saate tööle asuda?",
+      "quotationIncludes": "Mida hinnapakkumine sisaldab?",
+      "projectSize": "Milliste mahtudega projekte te vastu võtate?"
+    }
+  },
+  "getQuote": {
+    "eyebrow": "Kontakt",
+    "title": "Küsi pakkumist",
+    "subtitle": "Kirjelda oma projekti ja vastame ühe tööpäeva jooksul.",
+    "form": {
+      "nameLabel": "Nimi *",
+      "namePlaceholder": "Nimi",
+      "emailLabel": "E-post *",
+      "emailPlaceholder": "E-post",
+      "companyLabel": "Ettevõte (valikuline)",
+      "companyPlaceholder": "Ettevõtte nimi",
+      "phoneLabel": "Telefon *",
+      "phonePlaceholder": "Telefon",
+      "serviceLabel": "Vajalik teenus *",
+      "servicePlaceholder": "Teenus",
+      "descriptionLabel": "Projekti kirjeldus *",
+      "descriptionPlaceholder": "Projekti kirjeldus",
+      "consentLabel": "Nõustun oma isikuandmete töötlemisega hinnapakkumise saamise eesmärgil.",
+      "submitBtn": "Saada päring"
+    },
+    "sidebar": {
+      "title": "Kontaktandmed",
+      "officeLabel": "Kontor",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-post",
+      "responseTimeLabel": "Vastamisaeg",
+      "responseTimeText": "Vastame kõikidele päringutele ühe tööpäeva jooksul. Kiireloomuliste tööde puhul helistage otse.",
+      "credentialText": "Kõik meie tehnikud omavad kehtivat IRATA rahvusvahelist rope access sertifikaati. Täielik vastutuskindlustus igal projektil."
+    }
+  },
+  "footer": {
+    "tagline": {
+      "line1": "Täpsus kõrgusel.",
+      "line2": "Insenertehniline lähenemine maa peal."
+    },
+    "columnTitles": {
+      "services": "Teenused",
+      "company": "Ettevõte",
+      "contact": "Kontakt"
+    },
+    "services": {
+      "facadeRepair": "Fassaadi remont",
+      "sealingWaterproofing": "Hermeetimine ja hüdroisolatsioon",
+      "roofRepair": "Katuse remont",
+      "painting": "Värvimistööd",
+      "structureInstallation": "Konstruktsioonide paigaldus",
+      "constructionWorks": "Ehitustööd",
+      "buildingMaintenance": "Hoonete hooldus"
+    },
+    "copyright": "© 2024 Altmethods. Kõik õigused kaitstud."
+  }
 }
