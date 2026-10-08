@@ -160,5 +160,51 @@
       "buildingMaintenance": "Hoonete hooldus"
     },
     "copyright": "© 2024 Altmethods. Kõik õigused kaitstud."
+  },
+  "aboutPage": {
+    "eyebrow": "Meist",
+    "title": "Altmethodsist",
+    "subtitle": "Eesti inseneriettevõte, mis on spetsialiseerunud tehnilistele töödele kõrgustes.",
+    "storyTitle": "Meie lugu",
+    "storyParagraph1": "Altmethods OÜ asutati Tallinnas 2024. aastal meeskonna poolt, kellel on taust ehituses, tööstuslikus inspekteerimises ja rope access'is.",
+    "storyParagraph2": "Rajasime Altmethodsi selgele veendumusele: rope access, mida rakendavad nõuetekohaselt sertifitseeritud tehnikud, on tõsine inseneritehniline meetod — kiirem, vähem häiriv ja sageli ökonoomsem kui tavapärane ligipääsutehnika. See ei ole nišitegevus. See on õige tööriist konkreetset tüüpi probleemide jaoks.",
+    "storyParagraph3": "[Lisage näited klientidest/objektidest, kui need on olemas]",
+    "certificationsTitle": "Sertifikaadid ja standardid",
+    "certifications": [
+      "IRATA International — tasemed 1, 2 ja 3",
+      "EN 365 isikukaitsevahendid",
+      "ISO 22846 rope access ohutus",
+      "Kutsekindlustus"
+    ],
+    "regionsTitle": "Piirkonnad, kus tegutseme",
+    "regions": [
+      "Eesti",
+      "Läti",
+      "Leedu",
+      "Soome",
+      "Rootsi",
+      "Norra",
+      "Taani",
+      "Saksamaa",
+      "Poola",
+      "Tšehhi",
+      "Austria",
+      "Holland",
+      "Prantsusmaa",
+      "Suurbritannia"
+    ],
+    "infoCard": {
+      "eyebrow": "ALTMETHODS OÜ",
+      "founded": "Asutatud 2024, Tallinn, Eesti",
+      "techniciansPlaceholder": "[Sertifitseeritud tehnikute arv — täpsustada]",
+      "countriesPlaceholder": "[Riikide arv — täpsustada]",
+      "projectsPlaceholder": "[Valminud projektide arv — täpsustada]"
+    },
+    "irataNote": {
+      "eyebrow": "IRATA",
+      "text": "Omame IRATA rope access sertifikaati kõigil kolmel tasemel, koos regulaarse pädevuse ümberhindamisega.",
+      "linkDescription": "— Industrial Rope Access Trade Association"
+    },
+    "ctaButton": "Alusta projekti meiega"
   }
 }

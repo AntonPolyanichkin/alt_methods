@@ -7,22 +7,22 @@ function CompanyStats() {
       <div className={styles["statistics-container"]}>
         <dl className={styles.statisticCardsContainer}>
           <div className={styles.statisticCard}>
-            <dt>340+</dt>
+            <dt>Уточнити</dt>
             <dd>{t("companyStats.projectsCompleted")}</dd>
           </div>
           <div className={styles.listElementSeparator}></div>
           <div className={styles.statisticCard}>
-            <dt>12</dt>
+            <dt>Уточнити</dt>
             <dd>{t("companyStats.yearsActive")}</dd>
           </div>
           <div className={styles.listElementSeparator}></div>
           <div className={styles.statisticCard}>
-            <dt>28</dt>
+            <dt>Уточнити</dt>
             <dd>{t("companyStats.certifiedTechnicians")}</dd>
           </div>
           <div className={styles.listElementSeparator}></div>
           <div className={styles.statisticCard}>
-            <dt>14</dt>
+            <dt>Уточнити</dt>
             <dd>{t("companyStats.countriesServed")}</dd>
           </div>
         </dl>

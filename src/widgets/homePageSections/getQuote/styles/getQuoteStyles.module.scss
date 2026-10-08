@@ -5,7 +5,6 @@
 
 .getQuoteSection {
   padding: 112px 0;
-
   & .getQuote-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -144,7 +143,7 @@
       & .submitArrow {
         width: 0.875rem;
         height: 0.875rem;
-        background: url("../../../shared/pictures/icons/arrow-icon.svg") no-repeat center;
+        background: url("../../../shared/icons/arrow-icon.svg") no-repeat center;
         background-size: contain;
       }
     }
@@ -167,7 +166,7 @@
         row-gap: 1.25rem;
         & .contactItem:nth-child(1) {
           & .contactIcon {
-            background-image: url("../../../../shared/pictures/icons/location-icon-blue.svg");
+            background-image: url("../../../../shared/icons/location-icon-blue.svg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -175,7 +174,7 @@
         }
         & .contactItem:nth-child(2) {
           & .contactIcon {
-            background-image: url("../../../../shared/pictures/icons/phone-icon-hover.svg");
+            background-image: url("../../../../shared/icons/phone-icon-hover.svg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -183,7 +182,7 @@
         }
         & .contactItem:nth-child(3) {
           & .contactIcon {
-            background-image: url("../../../../shared/pictures/icons/mail-icon.svg");
+            background-image: url("../../../../shared/icons/mail-icon.svg");
             background-size: cover;
             background-repeat: no-repeat;
           }

@@ -1,0 +1,49 @@
+@use "../../../../shared/styles/titlesStyles" as *;
+@use "../../../../shared/styles/eyeBrowStyles" as *;
+@use "../../../../shared/styles/sizeMixin" as *;
+@use "../../../../shared/styles/var" as *;
+
+.aboutHero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  @include adaptiveValue("height", 420, 280);
+  background-size: cover;
+  background-position: center;
+  overflow: clip;
+  background: url("../../../../shared/pictures/hero-section-image.webp") center / cover no-repeat;
+  overflow: clip;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to top, rgb(21 27 40 / 85%) 0%, rgb(21 27 40 / 20%) 2%, rgb(21 27 40 / 0%) 100%),
+      linear-gradient(to bottom, rgb(21 27 40 / 85%) 0%, rgb(21 27 40 / 20%) 48%, rgb(21 27 40 / 0%) 100%);
+    z-index: 1;
+  }
+
+  & .about-hero-container {
+    position: relative;
+    z-index: 10;
+    max-width: 90rem;
+    width: 100%;
+    @include adaptiveValue("padding-bottom", 32, 20);
+  }
+
+  & .eyebrow {
+    @include eyeBrowStyles();
+  }
+
+  & .title {
+    @include titleStyles(#f2f1ec, 1, 60, 30);
+    margin-bottom: 0.75rem;
+  }
+
+  & .subtitle {
+    max-width: 32rem;
+    color: #f2f1ec;
+    @include adaptiveValue("font-size", 18, 15);
+    line-height: 1.5;
+  }
+}

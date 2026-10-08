@@ -1,0 +1,17 @@
+@use "../../../../shared/styles/eyeBrowStyles" as *;
+@use "../../../../shared/styles/titlesStyles" as *;
+
+.contactsHero {
+  width: 100%;
+  padding-block: 6rem;
+  background-color: #151b28;
+  & .contacts-hero-container {
+    max-width: 90rem;
+    & .contactsHeroEyebrow {
+      @include eyeBrowStyles();
+    }
+    & .contactsHeroTitle {
+      @include titleStyles(#f2f1ec, 1, 60, 30);
+    }
+  }
+}

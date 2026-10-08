@@ -1,0 +1,29 @@
+@use "../../../../shared/styles/titlesStyles" as *;
+@use "../../../../shared/styles/eyeBrowStyles" as *;
+@use "../../../../shared/styles/sizeMixin" as *;
+@use "../../../../shared/styles/var" as *;
+
+.portfolioHero {
+  background-color: #151b28;
+  @include adaptiveValue("padding-block", 96, 56);
+
+  & .portfolio-hero-container {
+    max-width: 90rem;
+  }
+
+  & .eyebrow {
+    @include eyeBrowStyles()
+  }
+
+  & .title {
+    @include titleStyles(#f2f1ec, 1, 60, 30);
+    margin-bottom: 1rem;
+  }
+
+  & .subtitle {
+    max-width: 32rem;
+    color: $text-primary;
+    @include adaptiveValue("font-size", 18, 15);
+    line-height: 1.5;
+  }
+}

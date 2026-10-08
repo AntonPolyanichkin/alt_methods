@@ -1,12 +1,12 @@
 import MainLayout from "../layouts/MainLayout";
-import Home from "@/pages/home/Home";
+import Home from "@/pages/home/HomePage";
 import { frontRoutes } from "./frontRoutes/frontRoutes";
 import Services from "@/pages/services/Services";
 import Service from "@/pages/service/Service";
-import Portfolio from "@/pages/portfolio/Portfolio";
+import Portfolio from "@/pages/portfolio/PortfolioPage";
 import ProjectDetails from "@/pages/projectDetails/ProjectDetails";
-import About from "@/pages/about/About";
-import Contacts from "@/pages/contacts/Contacts";
+import About from "@/pages/about/AboutPage";
+import Contacts from "@/pages/contacts/ContactsPage";
 import NotFound from "@/pages/notFound/NotFound";
 import RootRedirect from "../appInit/rootRedirect/rootRedirect";
 export const routes = [

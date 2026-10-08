@@ -160,5 +160,51 @@
       "buildingMaintenance": "Building Maintenance"
     },
     "copyright": "© 2024 Altmethods. All rights reserved."
+  },
+  "aboutPage": {
+    "eyebrow": "About",
+    "title": "About Altmethods",
+    "subtitle": "An Estonian engineering company specialising in technical works at height.",
+    "storyTitle": "Our Story",
+    "storyParagraph1": "Altmethods OÜ was founded in Tallinn in 2024 by a team with backgrounds in construction, industrial inspection, and rope access.",
+    "storyParagraph2": "We built Altmethods on a clear conviction: that rope access, applied by properly certified technicians, is a serious engineering method — faster, less disruptive, and often more economical than conventional access equipment. It is not a niche activity. It is the right tool for a specific class of problem.",
+    "storyParagraph3": "[Add client/project examples once available]",
+    "certificationsTitle": "Certifications & Standards",
+    "certifications": [
+      "IRATA International — Levels 1, 2 & 3",
+      "EN 365 Personal Protective Equipment",
+      "ISO 22846 Rope Access Safety",
+      "Professional Indemnity Insurance"
+    ],
+    "regionsTitle": "Regions We Serve",
+    "regions": [
+      "Estonia",
+      "Latvia",
+      "Lithuania",
+      "Finland",
+      "Sweden",
+      "Norway",
+      "Denmark",
+      "Germany",
+      "Poland",
+      "Czech Republic",
+      "Austria",
+      "Netherlands",
+      "France",
+      "United Kingdom"
+    ],
+    "infoCard": {
+      "eyebrow": "ALTMETHODS OÜ",
+      "founded": "Founded 2024, Tallinn, Estonia",
+      "techniciansPlaceholder": "[Number of certified technicians — to confirm]",
+      "countriesPlaceholder": "[Number of countries — to confirm]",
+      "projectsPlaceholder": "[Number of completed projects — to confirm]"
+    },
+    "irataNote": {
+      "eyebrow": "IRATA",
+      "text": "We hold IRATA rope access certification at all three levels, with regular competency reassessment.",
+      "linkDescription": "— Industrial Rope Access Trade Association"
+    },
+    "ctaButton": "Start a project with us"
   }
 }

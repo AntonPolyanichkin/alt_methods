@@ -1,0 +1,197 @@
+@use "../../../../shared/styles/sizeMixin" as *;
+@use "../../../../shared/styles/var" as *;
+
+.aboutSection {
+  @include adaptiveValue("padding-block", 56, 32);
+  background-color: #f2f1ec;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  column-gap: 3rem;
+  align-items: start;
+  max-width: 90rem;
+
+  @media (max-width: toEm($tablet)) {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+.mainColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  margin-bottom: 1.25rem;
+  color: #151b28;
+  @include adaptiveValue("font-size", 26, 21);
+  font-weight: 600;
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+}
+
+.paragraph {
+  margin-bottom: 1.25rem;
+  color: #151b28;
+  @include adaptiveValue("font-size", 16, 15);
+  line-height: 1.6;
+}
+
+// Явно відрізняється стилем, щоб було видно, що це плейсхолдер,
+// а не готовий текст — приберіть курсив/колір, коли додасте реальний абзац
+.paragraphPlaceholder {
+  padding: 0.875rem 1rem;
+  background-color: rgba(21, 27, 40, 0.04);
+  border-left: 0.1875rem dashed rgba(21, 27, 40, 0.25);
+  color: $text-primary;
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.certList {
+  display: flex;
+  flex-direction: column;
+}
+
+.certItem {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  padding-block: 0.875rem;
+  border-bottom: 0.0625rem solid rgba(21, 27, 40, 0.1);
+  color: #151b28;
+  @include adaptiveValue("font-size", 15, 14);
+}
+
+.shieldIcon {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url("../../../shared/pictures/icons/shield-icon.svg") no-repeat center;
+  background-size: contain;
+}
+
+.regionsList {
+  color: $text-primary;
+  @include adaptiveValue("font-size", 15, 14);
+  line-height: 1.8;
+}
+
+// ===== Сайдбар =====
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.infoCard {
+  padding: 1.75rem;
+  background-color: #151b28;
+  border-radius: 0.75rem;
+}
+
+.infoCardEyebrow {
+  margin-bottom: 1rem;
+  color: $accent-color;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.infoCardList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+
+  & li {
+    padding-bottom: 0.75rem;
+    border-bottom: 0.0625rem solid rgba(242, 241, 236, 0.1);
+    color: #f2f1ec;
+    font-size: 0.9375rem;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.placeholderItem {
+  color: rgba(242, 241, 236, 0.45) !important;
+  font-style: italic;
+}
+
+.irataNote {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 1.25rem;
+  background-color: #ffffff;
+}
+
+.irataEyebrow {
+  color: $accent-color;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.irataText {
+  color: $text-primary;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.irataLink {
+  color: $text-primary;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+
+  & a {
+    color: #151b28;
+    font-weight: 600;
+    text-decoration: underline;
+
+    @media (any-hover: hover) and (pointer: fine) {
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+.ctaButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  padding: 0.875rem 1.25rem;
+  background-color: $accent-color;
+  border-radius: 0.75rem;
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s ease;
+
+  @media (any-hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: #264761;
+    }
+  }
+}
+
+.ctaArrow {
+  width: 0.875rem;
+  height: 0.875rem;
+  background: url("../../../shared/pictures/icons/arrow-icon.svg") no-repeat center;
+  background-size: contain;
+}
