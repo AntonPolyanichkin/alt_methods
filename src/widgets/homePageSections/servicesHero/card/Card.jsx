@@ -1,8 +1,7 @@
 import { Link } from "react-router";
 import styles from "./styles/cardStyles.module.scss";
-import picture from "./pictures/picture.webp";
 import { useTranslation } from "react-i18next";
-function Card() {
+function Card({ picture, title, description, path }) {
   const { t } = useTranslation();
 
   return (
@@ -11,9 +10,11 @@ function Card() {
         <img src={picture} alt="Картинка" className={styles.picture} />
       </div>
       <div className={styles.textContainer}>
-        <h3 className={styles.cardTitle}>{t("serviceCard.facadeRepair.title")}</h3>
-        <p className={styles.cardText}>{t("serviceCard.facadeRepair.text")}</p>
-        <Link className={styles.cardLink}> {t("serviceCard.learnMore")} </Link>
+        <h3 className={styles.cardTitle}> {title}</h3>
+        <p className={styles.cardText}>{description}</p>
+        <Link className={styles.cardLink} to={path}>
+          {t("serviceCard.learnMore")}
+        </Link>
       </div>
     </article>
   );

@@ -1,49 +1,58 @@
-// Той самий плейсхолдер-підхід, що й у projects.js — чесний один плейсхолдер
-// замість вигаданих "різних" фото. Замініть на реальні, коли будуть.
-// import placeholderImage from "../pictures/picture.webp";
-
-// Тільки структурні, НЕперекладні поля. title/description/callout/works —
-// усе живе в i18n під ключем serviceDetail.<slug>.* (slug використовується
-// буквально як ключ JSON, напряму, без додаткового мапінгу в camelCase).
+// Тільки структурні, НЕперекладні поля.
+// - slug: використовується буквально як ключ i18n → serviceDetail.<slug>.*
+// - category: ключ категорії; підпис лежить в portfolioPage.categories.<category>
+// - heroImage/gallery: шляхи до фото
+const getImageUrl = (name) => {
+  // Шукає картинку в папці src/assets/
+  return new URL(`./servicesImg/${name}`, import.meta.url).href;
+};
 export const servicesList = [
   {
-    slug: "Wind turbine inspection and painting",
-    heroImage: "./servicesImg/picture_01.webp",
-    gallery: ["./servicesImg/picture_03.webp", "./servicesImg/picture_11.webp"],
+    slug: "wind-turbine-inspection-and-painting",
+    category: "inspection",
+    heroImage: getImageUrl("picture_01.png"),
+    gallery: [getImageUrl("picture_03.webp"), getImageUrl("picture_11.webp")],
   },
   {
-    slug: "NDT ship inspection",
-    heroImage: "./servicesImg/picture_20.webp",
+    slug: "ndt-ship-inspection",
+    category: "inspection",
+    heroImage: getImageUrl("picture_20.webp"),
     gallery: [],
   },
   {
-    slug: "Mine inspection",
-    heroImage: "./servicesImg/picture_19.webp",
-    gallery: ["./servicesImg/picture_18.webp", "./servicesImg/picture_17.webp"],
+    slug: "mine-inspection",
+    category: "inspection",
+    heroImage: getImageUrl("picture_19.webp"),
+    gallery: [getImageUrl("picture_18.webp"), getImageUrl("picture_17.webp")],
   },
   {
-    slug: "Crane installation ",
-    heroImage: "./servicesImg/picture_04.webp",
+    slug: "crane-installation",
+    category: "installation",
+    heroImage: getImageUrl("picture_04.webp"),
     gallery: [],
   },
   {
-    slug: "Pipe shortening",
-    heroImage: "./servicesImg/picture_12.webp",
-    gallery: ["./servicesImg/picture_13.webp"],
+    slug: "pipe-shortening",
+    category: "maintenance",
+    heroImage: getImageUrl("picture_12.webp"),
+    gallery: [getImageUrl("picture_13.webp")],
   },
   {
-    slug: "Installation of new equipment on the crane boom and painting",
-    heroImage: "./servicesImg/picture_21.webp",
+    slug: "installation-of-new-equipment-on-the-crane-boom-and-painting",
+    category: "installation",
+    heroImage: getImageUrl("picture_21.webp"),
     gallery: [],
   },
   {
-    slug: "Snow removal",
-    heroImage: "./servicesImg/picture_09.webp",
+    slug: "snow-removal",
+    category: "maintenance",
+    heroImage: getImageUrl("picture_09.webp"),
     gallery: [],
   },
   {
-    slug: "Absorber cleaning",
-    heroImage: "./servicesImg/picture_22.webp",
+    slug: "absorber-cleaning",
+    category: "maintenance",
+    heroImage: getImageUrl("picture_22.webp"),
     gallery: [],
   },
 ];

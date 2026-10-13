@@ -6,12 +6,16 @@ import PortfolioFilters from "../portfolioFilters/PortfolioFilters";
 import PortfolioHero from "../portfolioHero/PortfolioHero";
 import ProjectCard from "./projectCard/ProjectCard";
 
-const CATEGORIES = ["all", "facade", "roof", "sealing", "painting", "structure"];
+// Категорії беруться з даних, тож пустих кнопок фільтра не буде.
+const CATEGORIES = ["all", ...new Set(servicesList.map((s) => s.category))];
 
 function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const filteredProjects = activeCategory === "all" ? servicesList : servicesList.filter((p) => p.category === activeCategory);
+  const filteredProjects =
+    activeCategory === "all"
+      ? servicesList
+      : servicesList.filter((p) => p.category === activeCategory);
 
   return (
     <>

@@ -206,5 +206,134 @@
       "linkDescription": "— Industrial Rope Access Trade Association"
     },
     "ctaButton": "Start a project with us"
+  },
+
+  "portfolioPage": {
+    "eyebrow": "Portfolio",
+    "title": "Our Projects",
+    "subtitle": "Technical works across Estonia and internationally.",
+    "filtersLabel": "Filter projects by category"
+  },
+  "categories": {
+    "all": "All",
+    "inspection": "Inspection",
+    "installation": "Installation",
+    "maintenance": "Maintenance"
+  },
+  "serviceDetail": {
+    "irataEyebrow": "IRATA",
+    "irataNote": "All technicians certified to IRATA international standards. EN 365 / ISO 22846 compliant.",
+    "galleryTitle": "Project Gallery",
+    "wind-turbine-inspection-and-painting": {
+      "title": "Wind Turbine Inspection and Painting",
+      "description": "We carry out inspection and painting of wind turbines — towers, blades and nacelles — using certified rope access technicians. Regular inspection helps to detect surface damage and corrosion early, while protective painting extends the service life of the structure.",
+      "calloutTitle": "Performed Using Rope Access",
+      "calloutText": "Rope access gives technicians direct access to turbine towers and blades while reducing the need for cranes or lifting platforms. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Visual inspection of towers and blades",
+        "Detection of surface damage and corrosion",
+        "Surface cleaning and preparation",
+        "Protective coating and painting",
+        "Minor repair of coatings",
+        "Inspection report with photo documentation"
+      ]
+    },
+    "ndt-ship-inspection": {
+      "title": "NDT Ship Inspection",
+      "description": "We perform non-destructive testing (NDT) inspection of ships and their structures, including ultrasonic thickness measurement, visual, eddy current and penetrant testing. Rope access makes it possible to inspect areas at height and in hard-to-reach locations without extensive preparation.",
+      "calloutTitle": "Performed Using Rope Access",
+      "calloutText": "Rope access allows NDT technicians to reach ship structures at height and in hard-to-reach areas without erecting scaffolding. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Ultrasonic thickness measurement (UTM)",
+        "Visual testing (VT)",
+        "Eddy current testing (ET)",
+        "Penetrant testing (PT)",
+        "Reporting of results"
+      ]
+    },
+    "mine-inspection": {
+      "title": "Mine Inspection",
+      "description": "We carry out technical inspection of mine structures and equipment in locations that are difficult or unsafe to reach by conventional means. Inspections are performed by certified rope access technicians according to a written method statement.",
+      "calloutTitle": "Performed Using Rope Access",
+      "calloutText": "Rope access allows technicians to reach mine structures and hard-to-reach areas where conventional access equipment is impractical. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Visual inspection of mine structures",
+        "Condition assessment of structural elements",
+        "Detection of corrosion and damage",
+        "Photo documentation of findings",
+        "Inspection report"
+      ]
+    },
+    "crane-installation": {
+      "title": "Crane Installation",
+      "description": "We install cranes and crane components at height and in hard-to-reach locations. Rope access allows assembly and installation work to be carried out safely where scaffolding or lifting equipment cannot be used effectively.",
+      "calloutTitle": "Performed Using Rope Access",
+      "calloutText": "Rope access allows technicians to work on crane structures at height and in hard-to-reach positions where other access methods are impractical. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Assembly of crane structures at height",
+        "Installation of crane components",
+        "Dismantling of crane elements",
+        "Bolting and fastening works",
+        "Final check of installed elements"
+      ]
+    },
+    "pipe-shortening": {
+      "title": "Pipe Shortening",
+      "description": "We carry out shortening of industrial pipes at height, including cutting and dismantling of the removed sections. All work is planned in advance and performed by certified rope access technicians.",
+      "calloutTitle": "Performed Using Rope Access",
+      "calloutText": "Rope access allows technicians to work on tall industrial pipes without erecting scaffolding. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Preparation of the work area and method statement",
+        "Cutting of the pipe at the required height",
+        "Dismantling and lowering of removed sections",
+        "Finishing of the new pipe edge",
+        "Inspection after completion"
+      ]
+    },
+    "installation-of-new-equipment-on-the-crane-boom-and-painting": {
+      "title": "Installation of New Equipment on the Crane Boom and Painting",
+      "description": "We install new equipment on crane booms and carry out painting works at height. Rope access allows the work to be done directly on the boom, helping to limit downtime and the need for additional access equipment.",
+      "calloutTitle": "Performed Using Rope Access",
+      "calloutText": "Rope access allows technicians to work directly on the crane boom at height without additional lifting platforms or scaffolding. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Installation of new equipment on the boom",
+        "Fastening and connection works",
+        "Surface preparation",
+        "Protective coating and painting",
+        "Final inspection"
+      ]
+    },
+    "snow-removal": {
+      "title": "Snow Removal",
+      "description": "We remove snow and ice from roofs and structures at height where conventional equipment cannot be used effectively. Timely snow removal reduces the load on structures and the risk of falling snow and ice.",
+      "calloutTitle": "Performed Using Rope Access",
+      "calloutText": "Rope access allows technicians to clear snow and ice from roofs and structures at height where conventional equipment is impractical or unsafe. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Clearing snow from roofs and structures",
+        "Removal of ice and icicles",
+        "Securing of the work area",
+        "Inspection of the cleared surface"
+      ]
+    },
+    "absorber-cleaning": {
+      "title": "Absorber Cleaning",
+      "description": "We clean industrial absorbers and similar equipment in hard-to-reach areas. Cleaning is performed by certified rope access technicians, restoring the working condition of the equipment while limiting the need for scaffolding.",
+      "calloutTitle": "Performed Using Rope Access",
+      "calloutText": "Rope access allows technicians to reach the surfaces of tall industrial equipment without erecting scaffolding. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Removal of deposits and contamination",
+        "Cleaning of equipment surfaces at height",
+        "Visual inspection after cleaning",
+        "Collection of removed material"
+      ]
+    }
   }
 }

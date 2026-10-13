@@ -125,7 +125,7 @@ function GetQuote() {
               <div>
                 <h4 className={styles.contactLabel}>{t("getQuote.sidebar.officeLabel")}</h4>
                 {/* <p className={styles.contactValue}>Pärnu mnt 18, 10141 Tallinn, Estonia</p> */}
-                <address className={styles.contactValue}>Pärnu mnt 18, 10141 Tallinn, Estonia</address>
+                <address className={styles.contactValue}>Õismäe tee 99, 13515 Tallinn</address>
               </div>
             </li>
             <li className={styles.contactItem}>

@@ -206,5 +206,135 @@
       "linkDescription": "— Industrial Rope Access Trade Association"
     },
     "ctaButton": "Alusta projekti meiega"
+  },
+
+  "portfolioPage": {
+    "eyebrow": "Portfoolio",
+    "title": "Meie projektid",
+    "subtitle": "Tehnilised tööd Eestis ja välismaal.",
+    "filtersLabel": "Filtreeri projekte kategooria järgi",
+    "categories": {
+      "all": "Kõik",
+      "inspection": "Inspekteerimine",
+      "installation": "Paigaldus",
+      "maintenance": "Hooldus"
+    }
+  },
+ 
+  "serviceDetail": {
+    "irataEyebrow": "IRATA",
+    "irataNote": "Kõik tehnikud omavad kehtivat IRATA rahvusvahelist sertifikaati. Vastab EN 365 / ISO 22846 nõuetele.",
+    "galleryTitle": "Projekti galerii",
+    "wind-turbine-inspection-and-painting": {
+      "title": "Tuuleturbiinide inspekteerimine ja värvimine",
+      "description": "Teostame tuuleturbiinide — tornide, labade ja gondlite — inspekteerimist ja värvimist sertifitseeritud rope access tehnikute abil. Regulaarne inspekteerimine aitab pinnakahjustusi ja korrosiooni varakult avastada ning kaitsevärvimine pikendab konstruktsiooni kasutusiga.",
+      "calloutTitle": "Teostatud rope access meetodil",
+      "calloutText": "Rope access võimaldab tehnikutel pääseda otse tuuleturbiini tornidele ja labadele, vähendades kraanade või tõstuplatvormide vajadust. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Tornide ja labade visuaalne inspekteerimine",
+        "Pinnakahjustuste ja korrosiooni tuvastamine",
+        "Pinna puhastus ja ettevalmistus",
+        "Kaitsekatte ja värvimistööd",
+        "Katete väiksem remont",
+        "Inspekteerimisaruanne fotodokumentatsiooniga"
+      ]
+    },
+    "ndt-ship-inspection": {
+      "title": "Laevade mittepurustav kontroll (NDT)",
+      "description": "Teostame laevade ja nende konstruktsioonide mittepurustavat kontrolli (NDT), sh ultraheli paksusmõõtmist, visuaalset, pöörisvoolu- ja kapillaarkontrolli. Rope access võimaldab kontrollida kõrgustes ja raskesti ligipääsetavates kohtades asuvaid alasid ilma ulatusliku ettevalmistuseta.",
+      "calloutTitle": "Teostatud rope access meetodil",
+      "calloutText": "Rope access võimaldab NDT tehnikutel jõuda laeva konstruktsioonideni kõrgustes ja raskesti ligipääsetavates kohtades ilma tellinguid püstitamata. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Ultraheli paksusmõõtmine (UTM)",
+        "Visuaalne kontroll (VT)",
+        "Pöörisvoolukontroll (ET)",
+        "Kapillaarkontroll (PT)",
+        "Tulemuste aruandlus"
+      ]
+    },
+    "mine-inspection": {
+      "title": "Kaevanduste inspekteerimine",
+      "description": "Teostame kaevanduse konstruktsioonide ja seadmete tehnilist inspekteerimist kohtades, kuhu tavapäraste vahenditega on raske või ohtlik ligi pääseda. Inspekteerimist teostavad sertifitseeritud rope access tehnikud vastavalt kirjalikule töömeetodi kirjeldusele.",
+      "calloutTitle": "Teostatud rope access meetodil",
+      "calloutText": "Rope access võimaldab tehnikutel jõuda kaevanduse konstruktsioonide ja raskesti ligipääsetavate kohtadeni, kus tavapärased ligipääsuvahendid ei ole otstarbekad. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Kaevanduse konstruktsioonide visuaalne inspekteerimine",
+        "Konstruktsioonielementide seisukorra hindamine",
+        "Korrosiooni ja kahjustuste tuvastamine",
+        "Leidude fotodokumentatsioon",
+        "Inspekteerimisaruanne"
+      ]
+    },
+    "crane-installation": {
+      "title": "Kraanade paigaldus",
+      "description": "Paigaldame kraanasid ja kraanade komponente kõrgustes ja raskesti ligipääsetavates kohtades. Rope access võimaldab montaaži- ja paigaldustöid ohutult teostada seal, kus tellinguid või tõsteseadmeid ei ole võimalik tõhusalt kasutada.",
+      "calloutTitle": "Teostatud rope access meetodil",
+      "calloutText": "Rope access võimaldab tehnikutel töötada kraana konstruktsioonidel kõrgustes ja raskesti ligipääsetavates asukohtades, kus muud ligipääsumeetodid ei ole otstarbekad. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Kraana konstruktsioonide monteerimine kõrgustes",
+        "Kraana komponentide paigaldus",
+        "Kraana elementide demonteerimine",
+        "Poltimis- ja kinnitustööd",
+        "Paigaldatud elementide lõppkontroll"
+      ]
+    },
+    "pipe-shortening": {
+      "title": "Torude lühendamine",
+      "description": "Teostame tööstustorude lühendamist kõrgustes, sh eemaldatavate osade lõikamist ja demonteerimist. Kõik tööd planeeritakse ette ja neid teostavad sertifitseeritud rope access tehnikud.",
+      "calloutTitle": "Teostatud rope access meetodil",
+      "calloutText": "Rope access võimaldab tehnikutel töötada kõrgetel tööstustorudel ilma tellinguid püstitamata. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Tööala ettevalmistus ja töömeetodi kirjeldus",
+        "Toru lõikamine nõutud kõrgusel",
+        "Eemaldatud osade demonteerimine ja allalaskmine",
+        "Uue toruserva viimistlus",
+        "Kontroll pärast töö lõpetamist"
+      ]
+    },
+    "installation-of-new-equipment-on-the-crane-boom-and-painting": {
+      "title": "Uute seadmete paigaldus kraana noolele ja värvimine",
+      "description": "Paigaldame uusi seadmeid kraana noolele ja teostame värvimistöid kõrgustes. Rope access võimaldab töid teha otse noolel, aidates piirata seisakuid ja lisaligipääsuvahendite vajadust.",
+      "calloutTitle": "Teostatud rope access meetodil",
+      "calloutText": "Rope access võimaldab tehnikutel töötada otse kraana noolel kõrgustes ilma täiendavate tõstuplatvormide või tellinguteta. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Uute seadmete paigaldus kraana noolele",
+        "Kinnitus- ja ühendustööd",
+        "Pinna ettevalmistus",
+        "Kaitsekatte ja värvimistööd",
+        "Lõppkontroll"
+      ]
+    },
+    "snow-removal": {
+      "title": "Lumekoristus",
+      "description": "Eemaldame lund ja jääd katustelt ja konstruktsioonidelt kõrgustes seal, kus tavapärast tehnikat ei ole võimalik tõhusalt kasutada. Õigeaegne lumekoristus vähendab konstruktsioonide koormust ning allakukkuva lume ja jää ohtu.",
+      "calloutTitle": "Teostatud rope access meetodil",
+      "calloutText": "Rope access võimaldab tehnikutel puhastada katuseid ja konstruktsioone lumest ja jääst kõrgustes seal, kus tavapärane tehnika ei ole otstarbekas või ohutu. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Lume eemaldamine katustelt ja konstruktsioonidelt",
+        "Jää ja jääpurikate eemaldamine",
+        "Tööala turvamine",
+        "Puhastatud pinna kontroll"
+      ]
+    },
+    "absorber-cleaning": {
+      "title": "Absorberite puhastus",
+      "description": "Puhastame tööstuslikke absorbereid ja sarnaseid seadmeid raskesti ligipääsetavates kohtades. Puhastust teostavad sertifitseeritud rope access tehnikud, taastades seadmete töökorra ja piirates tellingute vajadust.",
+      "calloutTitle": "Teostatud rope access meetodil",
+      "calloutText": "Rope access võimaldab tehnikutel jõuda kõrgete tööstusseadmete pindadeni ilma tellinguid püstitamata. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Setete ja saaste eemaldamine",
+        "Seadmete pindade puhastus kõrgustes",
+        "Visuaalne kontroll pärast puhastust",
+        "Eemaldatud materjali kogumine"
+      ]
+    }
   }
 }

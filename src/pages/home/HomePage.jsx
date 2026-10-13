@@ -12,8 +12,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <CompanyStats />
-      <CompanyClients />
+      {/* <CompanyStats />
+      <CompanyClients /> */}
       <ServicesHero />
       <Advantages />
       <SelectedProjects />

@@ -8,7 +8,6 @@ export function useNavigationRoutes() {
     services: `/${lang}/${frontRoutes.services}`,
     serviceDetail: (slug) => `/${lang}/services/${slug}`,
     portfolio: `/${lang}/${frontRoutes.portfolio}`,
-    projectDetail: (slug) => `/${lang}/portfolio/${slug}`,
     about: `/${lang}/${frontRoutes.about}`,
     contact: `/${lang}/${frontRoutes.contacts}`,
   };

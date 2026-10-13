@@ -1,9 +1,8 @@
 import MainLayout from "../layouts/MainLayout";
 import Home from "@/pages/home/HomePage";
 import { frontRoutes } from "./frontRoutes/frontRoutes";
-import Services from "@/pages/services/Services";
-import Service from "@/pages/service/Service";
 import Portfolio from "@/pages/portfolio/PortfolioPage";
+import ServicesDetail from "@/widgets/portfolioPageSections/portfolio/servicesDetail/ServicesDetail";
 import ProjectDetails from "@/pages/projectDetails/ProjectDetails";
 import About from "@/pages/about/AboutPage";
 import Contacts from "@/pages/contacts/ContactsPage";
@@ -22,21 +21,14 @@ export const routes = [
       {
         index: true,
         element: <Home />,
-         meta: {
+        meta: {
           isInMenu: false,
         },
       },
-      {
-        path: frontRoutes.services,
-        element: <Services />,
-        meta: {
-          title: "services",
-          isInMenu: true,
-        },
-      },
+
       {
         path: frontRoutes.serviceDetail,
-        element: <Service />,
+        element: <ServicesDetail />,
         meta: { isInMenu: false },
       },
       {

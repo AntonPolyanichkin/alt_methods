@@ -1,0 +1,40 @@
+@use "../../../../../shared/styles/titlesStyles" as *;
+@use "../../../../../shared/styles/sizeMixin" as *;
+@use "../../../../../shared/styles/var" as *;
+@use "../../../../../shared/styles/eyeBrowStyles" as *;
+
+.serviceHero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  @include adaptiveValue("height", 420, 280);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: clip;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    // Градієнт тільки знизу — там, де текст, а не по всій картинці
+    // (на відміну від головного Hero, тут фото важливіше за текст)
+    background: linear-gradient(to top, rgb(21 27 40 / 85%) 0%, rgb(21 27 40 / 10%) 60%, rgb(21 27 40 / 0%) 100%);
+  }
+
+  & .service-hero-container {
+    position: relative;
+    z-index: 1;
+    max-width: 90rem;
+    width: 100%;
+    @include adaptiveValue("padding-bottom", 32, 20);
+  }
+
+  & .eyebrow {
+    @include eyeBrowStyles();
+  }
+
+  & .title {
+    @include titleStyles(#f2f1ec, 1, 48, 30);
+  }
+}
