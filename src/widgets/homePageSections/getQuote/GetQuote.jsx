@@ -22,7 +22,7 @@ function GetQuote() {
             <p className={styles.subtitle}>{t("getQuote.subtitle")}</p>
           </div>
 
-          <form className={styles.form} method="post" netlify>
+          <form className={styles.form} method="post" data-netlify="true" >
             <div className={styles.formGrid}>
               <div className={styles.formRow}>
                 <div className={styles.formField}>
