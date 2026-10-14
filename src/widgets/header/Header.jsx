@@ -8,7 +8,7 @@ import LanguagesSwitcher from "./languagesSwitcher/LanguagesSwitcher";
 import FeedbackBtn from "@/shared/ui/Feedback/FeedbackBtn";
 import { Link } from "react-router";
 import { useNavigationRoutes } from "@/app/router/navigationRoutes/useNavigationRoutes";
-import BurgerButton from "../header/burgerButton/BurgerButton";
+import BurgerButton from "./burgerButton/burgerButton";
 
 const PHONE_NUMBER = "+372 5562 5510";
 const PHONE_HREF = "tel:+37255625510";

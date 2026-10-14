@@ -1,4 +1,4 @@
-import Hero from "../../widgets/homePageSections/hero/Hero";
+import Hero from "../../widgets/homePageSections/Hero/Hero";
 import ServicesHero from "@/widgets/homePageSections/servicesHero/ServicesHero";
 import SelectedProjects from "@/widgets/homePageSections/selectedProjects/SelectedProjects";
 import Advantages from "@/widgets/homePageSections/advantages/Advantages";
