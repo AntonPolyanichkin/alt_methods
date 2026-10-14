@@ -49,7 +49,15 @@ function GetQuote() {
             <p className={styles.subtitle}>{t("getQuote.subtitle")}</p>
           </div>
 
-          <form className={styles.form} method="post" data-netlify="true" noValidate onSubmit={handleSubmit(onValid)}>
+          <form
+            className={styles.form}
+            name="get-quote"
+            method="post"
+            data-netlify="true"
+            noValidate
+            onSubmit={handleSubmit(onValid)}
+          >
+            <input type="hidden" name="form-name" value="get-quote" />
             <div className={styles.formGrid}>
               <div className={styles.formRow}>
                 <div className={styles.formField}>
