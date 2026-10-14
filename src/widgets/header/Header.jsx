@@ -6,9 +6,9 @@ import styles from "./styles/headerStyles.module.scss";
 import Menu from "./menu/Menu";
 import LanguagesSwitcher from "./languagesSwitcher/LanguagesSwitcher";
 import FeedbackBtn from "@/shared/ui/Feedback/FeedbackBtn";
-import BurgerButton from "./burgerButton/BurgerButton";
 import { Link } from "react-router";
 import { useNavigationRoutes } from "@/app/router/navigationRoutes/useNavigationRoutes";
+import BurgerButton from "./burgerButton/BurgerButton";
 
 const PHONE_NUMBER = "+372 5562 5510";
 const PHONE_HREF = "tel:+37255625510";

@@ -6,6 +6,7 @@ import CommonQuestions from "@/widgets/homePageSections/commonQuestions/CommonQu
 import OurExpertise from "@/widgets/homePageSections/ourExpertise/OurExpertise";
 import Reviews from "@/widgets/homePageSections/reviews/Reviews";
 import GetQuote from "@/widgets/homePageSections/getQuote/GetQuote";
+
 function Home() {
   return (
     <>
@@ -16,9 +17,9 @@ function Home() {
       <Advantages />
       <SelectedProjects />
       <OurExpertise />
-      <Reviews/>
+      <Reviews />
       <CommonQuestions />
-      <GetQuote/>
+      <GetQuote />
     </>
   );
 }
