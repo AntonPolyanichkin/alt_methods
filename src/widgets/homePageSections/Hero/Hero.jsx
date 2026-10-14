@@ -1,5 +1,5 @@
 import styles from "./styles/heroStyles.module.scss";
-import FeedBackBtn from "../../../shared/ui/feedback/FeedbackBtn";
+import FeedbackBtn from "@/shared/ui/Feedback/FeedbackBtn";
 import { useTranslation } from "react-i18next";
 function Hero() {
   const { t } = useTranslation();
@@ -13,7 +13,7 @@ function Hero() {
           </h1>
           <p className={styles.text}>{t("hero.description")}</p>
           <div className={styles.buttonContainer}>
-            <FeedBackBtn text={t("getQuoteBtn.btnText")} arrow={true} />
+            <FeedbackBtn text={t("getQuoteBtn.btnText")} arrow={true} />
             <button className={styles.servicesButton}>{t("hero.servicesBtn")}</button>
           </div>
         </div>
