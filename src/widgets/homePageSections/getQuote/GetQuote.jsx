@@ -57,7 +57,7 @@ function GetQuote() {
             noValidate
             onSubmit={handleSubmit(onValid)}
           >
-            <input type="hidden" name="form-name" value="get-quote" />
+            <input type="hidden" name="get-quote" value="get-quote" />
             <div className={styles.formGrid}>
               <div className={styles.formRow}>
                 <div className={styles.formField}>
