@@ -7,7 +7,7 @@ function Card({ picture, title, description, path }) {
   return (
     <article className={styles.card}>
       <div className={styles.pictureContainer}>
-        <img src={picture} alt="Картинка" className={styles.picture} />
+        <img src={picture} alt={title} className={styles.picture} />
       </div>
       <div className={styles.textContainer}>
         <h3 className={styles.cardTitle}> {title}</h3>

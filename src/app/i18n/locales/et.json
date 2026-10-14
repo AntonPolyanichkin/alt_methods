@@ -2,7 +2,15 @@
   "header": {
     "pictureAlt": "Logo",
     "closeMenu": "Sulge menüü",
-    "openMenu": "Ava menüü"
+    "openMenu": "Ava menüü",
+    "navigationLabel": "Peamenüü"
+  },
+  "accessibility": {
+    "skipToContent": "Liigu põhisisu juurde"
+  },
+  "notFound": {
+    "title": "Lehte ei leitud",
+    "homeLink": "Tagasi avalehele"
   },
   "menu": {
     "title": {
@@ -297,7 +305,7 @@
       ]
     },
     "installation-of-new-equipment-on-the-crane-boom-and-painting": {
-      "title": "Uute seadmete paigaldus kraana noolele ja värvimine",
+      "title": "Uue kraananoole seadme paigaldus",
       "description": "Paigaldame uusi seadmeid kraana noolele ja teostame värvimistöid kõrgustes. Rope access võimaldab töid teha otse noolel, aidates piirata seisakuid ja lisaligipääsuvahendite vajadust.",
       "calloutTitle": "Teostatud rope access meetodil",
       "calloutText": "Rope access võimaldab tehnikutel töötada otse kraana noolel kõrgustes ilma täiendavate tõstuplatvormide või tellinguteta. Kõigil tehnikutel on kehtiv IRATA sertifikaat. Enne iga tööd koostatakse kirjalik töömeetodi kirjeldus ja riskihinnang.",

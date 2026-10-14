@@ -9,7 +9,7 @@ function Menu({ onLinkClick }) {
   const normalizeRoutes = headerMenuRouts?.filter((route) => route?.meta?.isInMenu);
 
   return (
-    <nav className={styles.navigation}>
+    <nav className={styles.navigation} aria-label={t("header.navigationLabel")}>
       <ul className={styles.navigationList}>
         {normalizeRoutes.map((menuElement, index) => (
           <li key={index} className={styles.navigationListElement}>

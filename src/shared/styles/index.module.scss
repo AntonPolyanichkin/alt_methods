@@ -21,6 +21,27 @@ body {
   }
 }
 
+:focus-visible {
+  outline: 0.125rem solid $accent-color;
+  outline-offset: 0.1875rem;
+}
+
+.skipLink {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1100;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  background-color: $accent-color;
+  border-radius: 0.25rem;
+  transform: translateY(-150%);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
 [class*="-container"] {
   max-width: $container-max-width;
   padding-inline: 0.9375rem;

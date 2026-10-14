@@ -8,7 +8,7 @@ function ServicesHero() {
   const { serviceDetail } = useNavigationRoutes();
   return (
     <>
-      <section className={styles.services}>
+      <section className={styles.services} id="services">
         <div className={styles["services-container"]}>
           <div className={styles.contentContainer}>
             <div className={styles.textContainer}>

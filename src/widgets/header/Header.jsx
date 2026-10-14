@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./styles/headerStyles.module.scss";
 import Menu from "./menu/Menu";
 import LanguagesSwitcher from "./languagesSwitcher/LanguagesSwitcher";
-import FeedbackBtn from "@/shared/ui/feedback/FeedbackBtn";
+import FeedbackBtn from "@/shared/ui/Feedback/FeedbackBtn";
 import BurgerButton from "./burgerButton/BurgerButton";
 import { Link } from "react-router";
 import { useNavigationRoutes } from "@/app/router/navigationRoutes/useNavigationRoutes";
@@ -15,11 +15,15 @@ const PHONE_HREF = "tel:+37255625510";
 
 function Header() {
   const { t } = useTranslation();
-  const { home } = useNavigationRoutes();
+  const { home, contact } = useNavigationRoutes();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const burgerRef = useRef(null);
+  const navigationRef = useRef(null);
 
-  const closeMenu = () => setIsMenuOpen(false);
+  const closeMenu = (returnFocus = false) => {
+    setIsMenuOpen(false);
+    if (returnFocus) burgerRef.current?.focus();
+  };
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   useEffect(() => {
@@ -31,10 +35,32 @@ function Header() {
 
   useEffect(() => {
     if (!isMenuOpen) return;
+
+    navigationRef.current?.querySelector("a[href]")?.focus();
+
     const onKeyDown = (e) => {
       if (e.key === "Escape") {
-        closeMenu();
-        burgerRef.current?.focus();
+        closeMenu(true);
+        return;
+      }
+
+      if (e.key !== "Tab" || e.target.closest('[role="listbox"]')) return;
+
+      const focusableElements = [
+        ...navigationRef.current.querySelectorAll(
+          'a[href], button:not([disabled]), [role="combobox"], [tabindex]:not([tabindex="-1"])',
+        ),
+        burgerRef.current,
+      ].filter((element) => element?.getClientRects().length);
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement?.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement?.focus();
       }
     };
     window.addEventListener("keydown", onKeyDown);
@@ -55,20 +81,32 @@ function Header() {
               </picture>
             </Link>
           </div>
-          <div id="navigation" className={`${styles.navGroup} ${isMenuOpen ? styles.navGroupOpen : ""}`}>
-            <Menu onLinkClick={closeMenu} />
+          <div
+            id="navigation"
+            ref={navigationRef}
+            className={`${styles.navGroup} ${isMenuOpen ? styles.navGroupOpen : ""}`}
+            role={isMenuOpen ? "dialog" : undefined}
+            aria-modal={isMenuOpen ? "true" : undefined}
+            aria-label={isMenuOpen ? t("header.navigationLabel") : undefined}
+          >
+            <Menu onLinkClick={() => closeMenu(true)} />
             <div className={styles.navGroupActions}>
               <LanguagesSwitcher />
               <a href={PHONE_HREF} className={styles.phone}>
                 {PHONE_NUMBER}
               </a>
-              <a href={PHONE_HREF} className={styles.phoneIcon}></a>
-              <FeedbackBtn text={t("getQuoteBtn.btnText")} onClick={closeMenu} />
+              <a href={PHONE_HREF} className={styles.phoneIcon} aria-label={PHONE_NUMBER} />
+              <FeedbackBtn to={contact} text={t("getQuoteBtn.btnText")} size="sm" onClick={() => closeMenu(true)} />
             </div>
           </div>
           <BurgerButton ref={burgerRef} isOpen={isMenuOpen} onClick={toggleMenu} />
           {isMenuOpen && (
-            <button type="button" className={styles.overlay} aria-label={t("header.closeMenu")} onClick={closeMenu} />
+            <button
+              type="button"
+              className={styles.overlay}
+              aria-label={t("header.closeMenu")}
+              onClick={() => closeMenu(true)}
+            />
           )}
         </div>
       </div>

@@ -1,8 +1,11 @@
 import { Link } from "react-router";
 import styles from "./styles/footerStyles.module.scss";
 import { useTranslation } from "react-i18next";
+import { useNavigationRoutes } from "@/app/router/navigationRoutes/useNavigationRoutes";
+import { servicesList } from "@/app/constData/servicesList";
 function Footer() {
   const { t } = useTranslation();
+  const { serviceDetail, about, portfolio, contact } = useNavigationRoutes();
 
   return (
     <footer className={styles.footer}>
@@ -19,28 +22,13 @@ function Footer() {
           <div className={styles.footerColumn}>
             <h3 className={styles.footerColumnTitle}>{t("footer.columnTitles.services")} </h3>
             <ul className={styles.footerLinksList}>
-              <li>
-                {/* TODO: усім Link нижче бракує to — навігація поки нікуди не веде */}
-                <Link className={styles.footerLink}>{t("footer.services.facadeRepair")}</Link>
-              </li>
-              <li>
-                <Link className={styles.footerLink}>{t("footer.services.sealingWaterproofing")}</Link>
-              </li>
-              <li>
-                <Link className={styles.footerLink}>{t("footer.services.roofRepair")}</Link>
-              </li>
-              <li>
-                <Link className={styles.footerLink}>{t("footer.services.painting")}</Link>
-              </li>
-              <li>
-                <Link className={styles.footerLink}>{t("footer.services.structureInstallation")}</Link>
-              </li>
-              <li>
-                <Link className={styles.footerLink}>{t("footer.services.constructionWorks")}</Link>
-              </li>
-              <li>
-                <Link className={styles.footerLink}>{t("footer.services.buildingMaintenance")}</Link>
-              </li>
+              {servicesList.map((service) => (
+                <li key={service.slug}>
+                  <Link to={serviceDetail(service.slug)} className={styles.footerLink}>
+                    {t(`serviceDetail.${service.slug}.title`)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -48,13 +36,13 @@ function Footer() {
             <h3 className={styles.footerColumnTitle}>{t("footer.columnTitles.company")}</h3>
             <ul className={styles.footerLinksList}>
               <li>
-                <Link className={styles.footerLink}>{t("menu.title.about")}</Link>
+                <Link to={about} className={styles.footerLink}>{t("menu.title.about")}</Link>
               </li>
               <li>
-                <Link className={styles.footerLink}>{t("menu.title.portfolio")}</Link>
+                <Link to={portfolio} className={styles.footerLink}>{t("menu.title.portfolio")}</Link>
               </li>
               <li>
-                <Link className={styles.footerLink}>{t("menu.title.contact")}</Link>
+                <Link to={contact} className={styles.footerLink}>{t("menu.title.contact")}</Link>
               </li>
             </ul>
           </div>

@@ -10,10 +10,11 @@ import ScrollToTop from "../router/scrollToTop/ScrollToTop";
 
 export default function MainLayout() {
   const { lang } = useParams();
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   useEffect(() => {
     if (!SUPPORTED_LANGS.includes(lang)) return;
+    document.documentElement.lang = lang;
     if (i18n.language !== lang) {
       i18n.changeLanguage(lang);
     }
@@ -27,8 +28,11 @@ export default function MainLayout() {
     <>
       <ScrollToTop />
       <div className={styles.wrapper}>
+        <a className={styles.skipLink} href="#main-content">
+          {t("accessibility.skipToContent")}
+        </a>
         <Header />
-        <main>
+        <main id="main-content" tabIndex="-1">
           <Outlet context={{ lang }} />
         </main>
         <Footer />

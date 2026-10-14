@@ -2,7 +2,15 @@
   "header": {
     "pictureAlt": "Logo",
     "closeMenu": "Close menu",
-    "openMenu": "Open menu"
+    "openMenu": "Open menu",
+    "navigationLabel": "Main navigation"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "homeLink": "Return to home page"
   },
   "menu": {
     "title": {
@@ -212,14 +220,15 @@
     "eyebrow": "Portfolio",
     "title": "Our Projects",
     "subtitle": "Technical works across Estonia and internationally.",
-    "filtersLabel": "Filter projects by category"
+    "filtersLabel": "Filter projects by category",
+    "categories": {
+      "all": "All",
+      "inspection": "Inspection",
+      "installation": "Installation",
+      "maintenance": "Maintenance"
+    }
   },
-  "categories": {
-    "all": "All",
-    "inspection": "Inspection",
-    "installation": "Installation",
-    "maintenance": "Maintenance"
-  },
+
   "serviceDetail": {
     "irataEyebrow": "IRATA",
     "irataNote": "All technicians certified to IRATA international standards. EN 365 / ISO 22846 compliant.",
@@ -296,7 +305,7 @@
       ]
     },
     "installation-of-new-equipment-on-the-crane-boom-and-painting": {
-      "title": "Installation of New Equipment on the Crane Boom and Painting",
+      "title": "Installation of New Equipment on the Crane",
       "description": "We install new equipment on crane booms and carry out painting works at height. Rope access allows the work to be done directly on the boom, helping to limit downtime and the need for additional access equipment.",
       "calloutTitle": "Performed Using Rope Access",
       "calloutText": "Rope access allows technicians to work directly on the crane boom at height without additional lifting platforms or scaffolding. All technicians hold current IRATA certification. A written method statement and risk assessment are prepared before every job.",

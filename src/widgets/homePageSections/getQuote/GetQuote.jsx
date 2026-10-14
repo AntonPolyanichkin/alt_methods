@@ -22,7 +22,7 @@ function GetQuote() {
             <p className={styles.subtitle}>{t("getQuote.subtitle")}</p>
           </div>
 
-          <form className={styles.form}>
+          <form className={styles.form} method="post">
             <div className={styles.formGrid}>
               <div className={styles.formRow}>
                 <div className={styles.formField}>
@@ -64,10 +64,10 @@ function GetQuote() {
                   <label htmlFor={phoneFormId}>{t("getQuote.form.phoneLabel")}</label>
                   <input
                     className={styles.input}
-                    name={t("getQuote.form.phonePlaceholder")}
+                    name="phone"
                     id={phoneFormId}
                     type="tel"
-                    placeholder="phone"
+                    placeholder={t("getQuote.form.phonePlaceholder")}
                     required
                   />
                 </div>
