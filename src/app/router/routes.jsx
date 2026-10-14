@@ -1,5 +1,6 @@
 import MainLayout from "../layouts/MainLayout";
 import Home from "@/pages/home/HomePage";
+import Services from "@/pages/services/ServicesPage";
 import { frontRoutes } from "./frontRoutes/frontRoutes";
 import Portfolio from "@/pages/portfolio/PortfolioPage";
 import ServicesDetail from "@/widgets/portfolioPageSections/portfolio/servicesDetail/ServicesDetail";
@@ -30,6 +31,14 @@ export const routes = [
         path: frontRoutes.serviceDetail,
         element: <ServicesDetail />,
         meta: { isInMenu: false },
+      },
+      {
+        path: frontRoutes.services,
+        element: <Services />,
+        meta: {
+          title: "services",
+          isInMenu: true,
+        },
       },
       {
         path: frontRoutes.portfolio,
