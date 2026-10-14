@@ -1,6 +1,19 @@
 import { useId } from "react";
 import styles from "./styles/getQuoteStyles.module.scss";
 import { useTranslation } from "react-i18next";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { getQuoteSchema } from "./model/validationShema";
+
+function FieldError({ id, error }) {
+  const { t } = useTranslation();
+  if (!error) return null;
+  return (
+    <p id={id} className={styles.error} role="alert">
+      {t(`getQuote.errors.${error.message}`)}
+    </p>
+  );
+}
 
 function GetQuote() {
   const nameFormId = useId();
@@ -11,6 +24,20 @@ function GetQuote() {
   const projectDescriptionFormId = useId();
   const processingData = useId();
   const { t } = useTranslation();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(getQuoteSchema) });
+  const onValid = (_data, event) => {
+    event.target.submit();
+  };
+
+  const a11y = (id, error) => ({
+    "aria-invalid": error ? "true" : undefined,
+    "aria-describedby": error ? `${id}-error` : undefined,
+  });
+  const cls = (base, error) => (error ? `${base} ${styles.inputError}` : base);
 
   return (
     <section className={styles.getQuoteSection}>
@@ -22,30 +49,34 @@ function GetQuote() {
             <p className={styles.subtitle}>{t("getQuote.subtitle")}</p>
           </div>
 
-          <form className={styles.form} method="post" data-netlify="true" >
+          <form className={styles.form} method="post" data-netlify="true" noValidate onSubmit={handleSubmit(onValid)}>
             <div className={styles.formGrid}>
               <div className={styles.formRow}>
                 <div className={styles.formField}>
                   <label htmlFor={nameFormId}>{t("getQuote.form.nameLabel")}</label>
                   <input
-                    className={styles.input}
+                    className={cls(styles.input, errors.name)}
                     name="name"
                     id={nameFormId}
                     type="text"
                     placeholder={t("getQuote.form.namePlaceholder")}
-                    required
+                    {...a11y(nameFormId, errors.name)}
+                    {...register("name")}
                   />
+                  <FieldError id={`${nameFormId}-error`} error={errors.name} />
                 </div>
                 <div className={styles.formField}>
                   <label htmlFor={emailFormId}>{t("getQuote.form.emailLabel")}</label>
                   <input
-                    className={styles.input}
+                    className={cls(styles.input, errors.email)}
                     name="email"
                     id={emailFormId}
                     type="email"
                     placeholder={t("getQuote.form.emailPlaceholder")}
-                    required
+                    {...a11y(emailFormId, errors.email)}
+                    {...register("email")}
                   />
+                  <FieldError id={`${emailFormId}-error`} error={errors.email} />
                 </div>
               </div>
 
@@ -53,60 +84,73 @@ function GetQuote() {
                 <div className={styles.formField}>
                   <label htmlFor={companyFormId}>{t("getQuote.form.companyLabel")}</label>
                   <input
-                    className={styles.input}
+                    className={cls(styles.input, errors.company)}
                     name="company"
                     id={companyFormId}
                     type="text"
                     placeholder={t("getQuote.form.companyPlaceholder")}
+                    {...a11y(companyFormId, errors.company)}
+                    {...register("company")}
                   />
+                  <FieldError id={`${companyFormId}-error`} error={errors.company} />
                 </div>
                 <div className={styles.formField}>
                   <label htmlFor={phoneFormId}>{t("getQuote.form.phoneLabel")}</label>
                   <input
-                    className={styles.input}
+                    className={cls(styles.input, errors.phone)}
                     name="phone"
                     id={phoneFormId}
                     type="tel"
                     placeholder={t("getQuote.form.phonePlaceholder")}
-                    required
+                    {...a11y(phoneFormId, errors.phone)}
+                    {...register("phone")}
                   />
+                  <FieldError id={`${phoneFormId}-error`} error={errors.phone} />
                 </div>
               </div>
 
               <div className={styles.formField}>
                 <label htmlFor={serviceFormId}>{t("getQuote.form.serviceLabel")}</label>
                 <input
-                  className={styles.input}
+                  className={cls(styles.input, errors.service)}
                   name="service"
                   id={serviceFormId}
                   type="text"
                   placeholder={t("getQuote.form.servicePlaceholder")}
-                  required
+                  {...a11y(serviceFormId, errors.service)}
+                  {...register("service")}
                 />
+                <FieldError id={`${serviceFormId}-error`} error={errors.service} />
               </div>
 
               <div className={styles.formField}>
                 <label htmlFor={projectDescriptionFormId}>{t("getQuote.form.descriptionLabel")}</label>
                 <textarea
-                  className={styles.textarea}
+                  className={cls(styles.textarea, errors.projectDescription)}
                   name="project-description"
                   id={projectDescriptionFormId}
                   placeholder={t("getQuote.form.descriptionPlaceholder")}
-                  required
+                  {...a11y(projectDescriptionFormId, errors.projectDescription)}
+                  {...register("projectDescription")}
                 ></textarea>
+                <FieldError id={`${projectDescriptionFormId}-error`} error={errors.projectDescription} />
               </div>
 
-              <div className={styles.consentRow}>
-                <input
-                  className={styles.checkbox}
-                  name="processing-data"
-                  type="checkbox"
-                  id={processingData}
-                  required
-                />
-                <label htmlFor={processingData} className={styles.consentLabel}>
-                  {t("getQuote.form.consentLabel")}{" "}
-                </label>
+              <div className={styles.formField}>
+                <div className={styles.consentRow}>
+                  <input
+                    className={styles.checkbox}
+                    name="processing-data"
+                    type="checkbox"
+                    id={processingData}
+                    {...a11y(processingData, errors.processingData)}
+                    {...register("processingData")}
+                  />
+                  <label htmlFor={processingData} className={styles.consentLabel}>
+                    {t("getQuote.form.consentLabel")}{" "}
+                  </label>
+                </div>
+                <FieldError id={`${processingData}-error`} error={errors.processingData} />
               </div>
 
               <button type="submit" className={styles.submitBtn}>

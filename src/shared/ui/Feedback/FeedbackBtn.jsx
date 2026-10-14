@@ -7,8 +7,9 @@
 
 import styles from "./styles/feedbackBtnStyles.module.scss";
 
-function Feedback({ text, size = "md", onClick, arrow = false}) {
+function FeedbackBtn({ text, size = "md", onClick, arrow = false}) {
   const btnMainClass = ()=> arrow ? "btn-arrow" : "btn"
+
   return (
     <button
       onClick={onClick}
@@ -19,5 +20,5 @@ function Feedback({ text, size = "md", onClick, arrow = false}) {
   );
 }
 
-export default Feedback;
+export default FeedbackBtn;
 

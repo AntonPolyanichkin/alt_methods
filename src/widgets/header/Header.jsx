@@ -6,7 +6,7 @@ import styles from "./styles/headerStyles.module.scss";
 import Menu from "./menu/Menu";
 import LanguagesSwitcher from "./languagesSwitcher/LanguagesSwitcher";
 import FeedbackBtn from "@/shared/ui/Feedback/FeedbackBtn";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useNavigationRoutes } from "@/app/router/navigationRoutes/useNavigationRoutes";
 import BurgerButton from "./burgerButton/burgerButton";
 
@@ -19,9 +19,15 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const burgerRef = useRef(null);
   const navigationRef = useRef(null);
+  const navigate = useNavigate();
 
   const closeMenu = (returnFocus = false) => {
     setIsMenuOpen(false);
+    if (returnFocus) burgerRef.current?.focus();
+  };
+  const closeMenuWithNavigate = (returnFocus = false, navigationPath) => {
+    setIsMenuOpen(false);
+    navigate(navigationPath);
     if (returnFocus) burgerRef.current?.focus();
   };
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
@@ -96,7 +102,12 @@ function Header() {
                 {PHONE_NUMBER}
               </a>
               <a href={PHONE_HREF} className={styles.phoneIcon} aria-label={PHONE_NUMBER} />
-              <FeedbackBtn to={contact} text={t("getQuoteBtn.btnText")} size="sm" onClick={() => closeMenu(true)} />
+              <FeedbackBtn
+                to={contact}
+                text={t("getQuoteBtn.btnText")}
+                size="sm"
+                onClick={() => closeMenuWithNavigate(true, contact)}
+              />
             </div>
           </div>
           <BurgerButton ref={burgerRef} isOpen={isMenuOpen} onClick={toggleMenu} />

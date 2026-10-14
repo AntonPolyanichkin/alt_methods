@@ -146,6 +146,21 @@
       "responseTimeLabel": "Response Time",
       "responseTimeText": "We respond to all enquiries within one business day. For urgent works, please call directly.",
       "credentialText": "All our technicians hold current IRATA international rope access certification. Full liability insurance on every project."
+    },
+    "errors": {
+      "nameRequired": "Name is required",
+      "nameShort": "Name is too short",
+      "nameLong": "Name is too long",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Enter a valid email address",
+      "companyLong": "Company name is too long",
+      "phoneRequired": "Phone is required",
+      "phoneInvalid": "Enter a valid phone number",
+      "serviceRequired": "Please specify the service required",
+      "descriptionRequired": "Please describe your project",
+      "descriptionShort": "Please provide a bit more detail",
+      "descriptionLong": "Description is too long",
+      "consentRequired": "You must consent to data processing to submit this form"
     }
   },
   "footer": {

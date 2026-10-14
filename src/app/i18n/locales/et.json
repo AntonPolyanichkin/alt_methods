@@ -146,6 +146,21 @@
       "responseTimeLabel": "Vastamisaeg",
       "responseTimeText": "Vastame kõikidele päringutele ühe tööpäeva jooksul. Kiireloomuliste tööde puhul helistage otse.",
       "credentialText": "Kõik meie tehnikud omavad kehtivat IRATA rahvusvahelist rope access sertifikaati. Täielik vastutuskindlustus igal projektil."
+    },
+    "errors": {
+      "nameRequired": "Nimi on kohustuslik",
+      "nameShort": "Nimi on liiga lühike",
+      "nameLong": "Nimi on liiga pikk",
+      "emailRequired": "E-post on kohustuslik",
+      "emailInvalid": "Sisesta kehtiv e-posti aadress",
+      "companyLong": "Ettevõtte nimi on liiga pikk",
+      "phoneRequired": "Telefon on kohustuslik",
+      "phoneInvalid": "Sisesta kehtiv telefoninumber",
+      "serviceRequired": "Palun märgi vajalik teenus",
+      "descriptionRequired": "Palun kirjelda oma projekti",
+      "descriptionShort": "Palun lisa veidi rohkem üksikasju",
+      "descriptionLong": "Kirjeldus on liiga pikk",
+      "consentRequired": "Vormi saatmiseks pead nõustuma andmete töötlemisega"
     }
   },
   "footer": {
@@ -228,7 +243,7 @@
       "maintenance": "Hooldus"
     }
   },
- 
+
   "serviceDetail": {
     "irataEyebrow": "IRATA",
     "irataNote": "Kõik tehnikud omavad kehtivat IRATA rahvusvahelist sertifikaati. Vastab EN 365 / ISO 22846 nõuetele.",

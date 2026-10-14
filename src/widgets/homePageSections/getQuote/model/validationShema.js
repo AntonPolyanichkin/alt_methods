@@ -1,27 +1,26 @@
 import * as yup from "yup";
 
-
 export const getQuoteSchema = yup.object({
-  name: yup.string().trim().required("Name is required").min(2, "Name is too short").max(100, "Name is too long"),
+  name: yup.string().trim().required("nameRequired").min(2, "nameShort").max(100, "nameLong"),
 
-  email: yup.string().trim().required("Email is required").email("Enter a valid email address"),
+  email: yup.string().trim().required("emailRequired").email("emailInvalid"),
 
-  company: yup.string().trim().max(150, "Company name is too long"),
+  company: yup.string().trim().max(150, "companyLong"),
 
   phone: yup
     .string()
     .trim()
-    .required("Phone is required")
-    .matches(/^[+\d][\d\s()-]{6,}$/, "Enter a valid phone number"),
+    .required("phoneRequired")
+    .matches(/^[+\d][\d\s()-]{6,}$/, "phoneInvalid"),
 
-  service: yup.string().trim().required("Please specify the service required"),
+  service: yup.string().trim().required("serviceRequired"),
 
   projectDescription: yup
     .string()
     .trim()
-    .required("Please describe your project")
-    .min(10, "Please provide a bit more detail")
-    .max(2000, "Description is too long"),
+    .required("descriptionRequired")
+    .min(10, "descriptionShort")
+    .max(2000, "descriptionLong"),
 
-  processingData: yup.boolean().oneOf([true], "You must consent to data processing to submit this form"),
+  processingData: yup.boolean().oneOf([true], "consentRequired"),
 });

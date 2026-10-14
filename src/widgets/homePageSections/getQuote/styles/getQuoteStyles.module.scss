@@ -87,6 +87,16 @@
           background-color: #ffffff;
         }
       }
+      & .error {
+        margin: 6px 0 0;
+        font-size: 13px;
+        line-height: 1.4;
+        color: #b3261e;
+      }
+
+      & .inputError {
+        border-color: #b3261e;
+      }
 
       & .textarea {
         min-height: 8rem;
