@@ -87,6 +87,15 @@ The language switcher is available in both the header and footer.
 
 The layouts are designed to accommodate different text lengths between languages.
 
+### SEO deployment configuration
+
+Set `VITE_SITE_URL` in the production build environment to the verified HTTPS origin
+without a trailing path (for example, `https://www.example.com`). The build uses it
+to generate `sitemap.xml`; the client uses the same value for canonical, `hreflang`,
+Open Graph URL, and image metadata. The value is intentionally not guessed from a
+preview or Netlify deployment hostname. Without it, those domain-dependent outputs
+are omitted and `robots.txt` still allows crawling.
+
 ### Responsive Design
 
 The website is designed for both desktop and mobile devices.

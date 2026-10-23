@@ -7,6 +7,7 @@ import { DEFAULT_LANG, SUPPORTED_LANGS } from "../i18n/langs";
 import Footer from "@/widgets/footer/Footer";
 import styles from "../../shared/styles/index.module.scss";
 import ScrollToTop from "../router/scrollToTop/ScrollToTop";
+import SeoMetadata from "../seo/SeoMetadata";
 
 export default function MainLayout() {
   const { lang } = useParams();
@@ -26,6 +27,7 @@ export default function MainLayout() {
 
   return (
     <>
+      <SeoMetadata />
       <ScrollToTop />
       <div className={styles.wrapper}>
         <a className={styles.skipLink} href="#main-content">
