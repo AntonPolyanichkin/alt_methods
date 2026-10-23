@@ -246,6 +246,6 @@ The main goals of the project are to:
 
 ## Status
 
- **Was done**
+ ✅**Was done**
 
 The project is built as a modern, responsive web experience, with a focus on clean architecture, reusable components, and scalable multilingual content.
