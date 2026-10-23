@@ -67,6 +67,20 @@ export const servicesList = [
     posterImg: gePostetImageUrl("poster-picture-08.webp"),
     gallery: [],
   },
+  {
+    slug: "drain-cleaning",
+    category: "maintenance",
+    heroImage: getImageUrl("picture_24.webp"),
+    posterImg: gePostetImageUrl("poster-picture-10.webp"),
+    gallery: [getImageUrl("picture_24.webp"), getImageUrl("picture_25.webp")],
+  },
+  {
+    slug: "crown-high-rise-roof-touch-ups",
+    category: "maintenance",
+    heroImage: getImageUrl("picture_23.webp"),
+    posterImg: gePostetImageUrl("poster-picture-09.webp"),
+    gallery: [],
+  },
 ];
 
 export function getServiceBySlug(slug) {

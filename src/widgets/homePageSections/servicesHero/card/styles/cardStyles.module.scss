@@ -68,7 +68,9 @@
       object-fit: cover;
       object-position: 50% 30%;
       filter: grayscale(0%) brightness(100%);
-      transition: filter 0.5s ease;
+      transition:
+        filter 0.35s ease,
+        transform 0.35s ease;
     }
   }
   @media (any-hover: hover) and (pointer: fine) {
@@ -81,8 +83,6 @@
     }
   }
 
-  // На мобільному картка займає всю доступну ширину, а не впирається
-  // у фіксовані 23.3125rem
   @media (max-width: toEm($mobile)) {
     max-width: 100%;
     & .pictureContainer {

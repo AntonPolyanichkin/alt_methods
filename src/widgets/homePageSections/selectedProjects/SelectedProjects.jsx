@@ -8,6 +8,7 @@ import ProjectCard from "@/widgets/portfolioPageSections/portfolio/projectCard/P
 function SelectedProjects() {
   const { t } = useTranslation();
   const { portfolio } = useNavigationRoutes();
+  const selectedProjectList = servicesList.slice(0, 6);
   return (
     <section className={styles.selectedProgectsSection}>
       <div className={styles["selected-progects-container"]}>
@@ -24,15 +25,7 @@ function SelectedProjects() {
           </div>
         </div>
         <div className={styles.selectedProgectsCardsContianer}>
-          {servicesList.map((service, index) => (
-            // <article className={styles.selectedProgectsCard} key={index}>
-            //   <Link to={routes.serviceDetail(service.slug)} className={styles.selectedProgectsCardPictureContainer}>
-            //     <img src={service.heroImage} alt="" className={styles.selectedProgectsCardPicture} />
-            //   </Link>
-            //   <div className={styles.selectedProgectsCardTag}>
-            //     <p>{t(`serviceDetail.${service.slug}.title`)}</p>
-            //   </div>
-            // </article>
+          {selectedProjectList.map((service, index) => (
             <ProjectCard project={service} key={index} />
           ))}
         </div>

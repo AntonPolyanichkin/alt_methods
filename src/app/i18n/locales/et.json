@@ -351,6 +351,31 @@
         "Visuaalne kontroll pärast puhastust",
         "Eemaldatud materjali kogumine"
       ]
+    },
+    "drain-cleaning": {
+      "title": "Katuse vihmaveesüsteemi puhastus",
+      "description": "Puhastame katuserennid ja äravooluavad lehtedest ning muust prahist, et vihmavesi saaks hoonest eemale voolata. Rope access sobib kõrgel ja raskesti ligipääsetavates katuseosades töötamiseks.",
+      "calloutTitle": "Puhastustööd kõrgustes",
+      "calloutText": "Rope access võimaldab jõuda katuse vihmaveesüsteemini ilma tellinguid püstitamata, kui see pole otstarbekas. Töö kavandatakse ohutut ligipääsu arvestades ning pärast puhastust kontrollitakse vee äravoolu.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Lehtede ja lahtise prahi eemaldamine rennidest",
+        "Ligipääsetavate äravooluavade puhastamine",
+        "Eemaldatud prahi kokkukogumine ja äraviimine",
+        "Vee äravoolu visuaalne kontroll pärast puhastust"
+      ]
+    },
+    "crown-high-rise-roof-touch-ups": {
+      "title": "„Crown“: kõrghoone katuse viimistlustööd",
+      "description": "Väiksemad viimistlus- ja parandustööd kõrghoone katuse ülaosa ehk „Crown“ piirkonnas. Rope access võimaldab teha kohapealseid töid kõrgustes, häirides objekti tegevust võimalikult vähe.",
+      "calloutTitle": "Kohapealsed tööd kõrgustes",
+      "calloutText": "Rope access aitab pääseda hoone katuse ülaosa ja teiste raskesti ligipääsetavate kohtadeni ilma ulatuslike ajutiste konstruktsioonideta. Täpne tööde maht määratakse projekti järgi.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Ligipääs valitud katuse ülaosa piirkondadele",
+        "Kohapealsed viimistlus- ja parandustööd",
+        "Teostatud tööde visuaalne kontroll"
+      ]
     }
   }
 }

@@ -120,6 +120,7 @@
       }
 
       & .consentLabel {
+        align-self: center;
         color: $text-primary;
         @include adaptiveValue("font-size", 12, 8);
         font-weight: 500;

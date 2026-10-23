@@ -351,6 +351,31 @@
         "Visual inspection after cleaning",
         "Collection of removed material"
       ]
+    },
+    "drain-cleaning": {
+      "title": "Roof Drain Cleaning",
+      "description": "We clear roof gutters and drainage outlets of leaves and other debris to help rainwater flow away from the building. Rope access is suitable for elevated and difficult-to-reach roof areas.",
+      "calloutTitle": "Cleaning at Height",
+      "calloutText": "Rope access allows technicians to reach roof drainage systems without installing scaffolding where it is not practical. The work is planned for safe access, and the drainage flow is checked after cleaning.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Removal of leaves and loose debris from gutters",
+        "Cleaning of accessible drainage outlets",
+        "Collection and removal of cleared debris",
+        "Visual check of water flow after cleaning"
+      ]
+    },
+    "crown-high-rise-roof-touch-ups": {
+      "title": "Crown: High-Rise Roof Touch-Ups",
+      "description": "Touch-up work around the crown of a high-rise building's roof. Rope access provides a way to reach elevated areas for localized finishing work with limited disruption to the surrounding site.",
+      "calloutTitle": "Localized Work at Height",
+      "calloutText": "Rope access helps technicians reach the roof crown and other difficult-to-access areas without extensive temporary access structures. The exact touch-up scope is determined for the project.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Access to selected areas around the rooftop crown",
+        "Localized touch-up and finishing work",
+        "Visual check of completed areas"
+      ]
     }
   }
 }
