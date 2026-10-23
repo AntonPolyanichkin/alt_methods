@@ -58,7 +58,7 @@
   }
 
   & .heroTitle {
-    @include titleStyles(#fff,1,72,30);
+    @include titleStyles(#fff, 1, 72, 30);
   }
 
   & .text {
