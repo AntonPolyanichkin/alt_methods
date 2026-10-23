@@ -93,7 +93,7 @@
       "irata": "IRATA Certified",
       "standards": "EN 365 / ISO 22846",
       "insured": "Fully Insured",
-      "countries": "14 Countries"
+      "countries": "Internationality"
     }
   },
   "reviews": {
@@ -116,6 +116,14 @@
       "mobilise": "How quickly can you mobilise?",
       "quotationIncludes": "What does the quotation include?",
       "projectSize": "What size projects do you take on?"
+    },
+    "answers": {
+      "ropeAccessWhat": "Rope access is a method of working at height using ropes and specialist safety equipment, allowing technicians to reach hard-to-reach areas without scaffolding or lifts.",
+      "ropeAccessSafe": "Yes. When the correct procedures are followed, rope access is a safe method of working at height: technicians use independent working and backup lines, certified equipment, and work under the supervision of a qualified supervisor.",
+      "outsideEstonia": "Yes. We work across Estonia and internationally. Tell us where your project is located, and we will confirm the timing and logistics.",
+      "mobilise": "We can mobilise to site quickly. Mobilisation times are agreed individually for each project.",
+      "quotationIncludes": "Our quotation sets out the specific scope of works, the cost of each stage, the timeline, and the conditions for organising the work at height. You know in advance what you are paying for, how the process will be organised, and what result to expect.",
+      "projectSize": "We carry out both limited-scope works at height and complex projects at large industrial and commercial sites. We assess the scale of each project based on technical requirements, the complexity of access, and the resources needed."
     }
   },
   "getQuote": {
@@ -200,22 +208,7 @@
       "Professional Indemnity Insurance"
     ],
     "regionsTitle": "Regions We Serve",
-    "regions": [
-      "Estonia",
-      "Latvia",
-      "Lithuania",
-      "Finland",
-      "Sweden",
-      "Norway",
-      "Denmark",
-      "Germany",
-      "Poland",
-      "Czech Republic",
-      "Austria",
-      "Netherlands",
-      "France",
-      "United Kingdom"
-    ],
+    "regions": "We work across Estonia and internationally. Tell us where your project is located, and we will confirm the timing and logistics.",
     "infoCard": {
       "eyebrow": "ALTMETHODS OÜ",
       "founded": "Founded 2024, Tallinn, Estonia",

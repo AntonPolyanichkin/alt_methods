@@ -36,13 +36,19 @@ function Footer() {
             <h3 className={styles.footerColumnTitle}>{t("footer.columnTitles.company")}</h3>
             <ul className={styles.footerLinksList}>
               <li>
-                <Link to={about} className={styles.footerLink}>{t("menu.title.about")}</Link>
+                <Link to={about} className={styles.footerLink}>
+                  {t("menu.title.about")}
+                </Link>
               </li>
               <li>
-                <Link to={portfolio} className={styles.footerLink}>{t("menu.title.portfolio")}</Link>
+                <Link to={portfolio} className={styles.footerLink}>
+                  {t("menu.title.portfolio")}
+                </Link>
               </li>
               <li>
-                <Link to={contact} className={styles.footerLink}>{t("menu.title.contact")}</Link>
+                <Link to={contact} className={styles.footerLink}>
+                  {t("menu.title.contact")}
+                </Link>
               </li>
             </ul>
           </div>
@@ -52,26 +58,26 @@ function Footer() {
             <ul className={styles.footerLinksList}>
               <li>
                 {/*  тут як варіант додати лінк на гугл мапс */}
-                <span className={styles.footerLink}>Pärnu mnt 18, 10141 Tallinn, Estonia</span>
+                <address className={styles.footerLink}>Õismäe tee 99, 13515 Tallinn</address>
               </li>
               <li>
                 <a className={styles.footerLink} href="tel:+37251234567">
                   +372 5123 4567
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a className={styles.footerLink} href="mailto:info@alpkon.ee">
                   info@alpkon.ee
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
 
         <div className={styles.footerBottom}>
           <div className={styles.footerLegal}>
-            <p className={styles.footerLegalItem}>Reg. no. !потрібен номер!</p>
-            <p className={styles.footerLegalItem}>VAT потрібен номер платника податків</p>
+            <p className={styles.footerLegalItem}>OÜ ALTMETHODS | Reg. no. 17005964</p>
+            <p className={styles.footerLegalItem}>VAT: EE102747216</p>
             <p className={styles.footerLegalItem}>{t("footer.copyright")}</p>
           </div>
         </div>

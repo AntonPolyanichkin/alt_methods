@@ -93,7 +93,7 @@
       "irata": "IRATA sertifikaat",
       "standards": "EN 365 / ISO 22846",
       "insured": "Täielikult kindlustatud",
-      "countries": "14 riiki"
+      "countries": "Rahvusvahelisus"
     }
   },
   "reviews": {
@@ -116,6 +116,14 @@
       "mobilise": "Kui kiiresti saate tööle asuda?",
       "quotationIncludes": "Mida hinnapakkumine sisaldab?",
       "projectSize": "Milliste mahtudega projekte te vastu võtate?"
+    },
+    "answers": {
+      "ropeAccessWhat": "Rope access on kõrgtööde meetod, mille puhul kasutatakse köisi ja spetsiaalset kindlustusvarustust, võimaldades jõuda raskesti ligipääsetavatesse kohtadesse ilma tellinguteta ja tõstukiteta.",
+      "ropeAccessSafe": "Jah. Tehnoloogia nõuete järgimisel on rope access ohutu kõrgtööde meetod: tehnikud kasutavad sõltumatuid töö- ja kindlustussüsteeme, sertifitseeritud varustust ning töötavad kvalifitseeritud töödejuhataja järelevalve all.",
+      "outsideEstonia": "Jah. Töötame üle Eesti ja rahvusvaheliselt. Andke meile teada oma projekti asukoht ning kinnitame ajakava ja logistika.",
+      "mobilise": "Saame objektile kiiresti kohale asuda. Saabumise tähtajad lepime kokku iga projekti jaoks eraldi.",
+      "quotationIncludes": "Hinnapakkumises toome välja konkreetse tööde loetelu, iga etapi maksumuse, teostustähtajad ning kõrgustes töötamise korralduse tingimused. Te teate ette, mille eest maksate, kuidas protsess korraldatakse ja millise tulemuse saate.",
+      "projectSize": "Teostame nii väiksemamahulisi kõrgtöid kui ka keerukaid projekte suurtel tööstus- ja äriobjektidel. Projekti mahu määrame tehniliste nõuete, ligipääsu keerukuse ja vajalike ressursside põhjal."
     }
   },
   "getQuote": {
@@ -200,22 +208,7 @@
       "Kutsekindlustus"
     ],
     "regionsTitle": "Piirkonnad, kus tegutseme",
-    "regions": [
-      "Eesti",
-      "Läti",
-      "Leedu",
-      "Soome",
-      "Rootsi",
-      "Norra",
-      "Taani",
-      "Saksamaa",
-      "Poola",
-      "Tšehhi",
-      "Austria",
-      "Holland",
-      "Prantsusmaa",
-      "Suurbritannia"
-    ],
+    "regions": "Töötame üle Eesti ja rahvusvaheliselt. Andke meile teada oma projekti asukoht ning kinnitame ajakava ja logistika.",
     "infoCard": {
       "eyebrow": "ALTMETHODS OÜ",
       "founded": "Asutatud 2024, Tallinn, Eesti",

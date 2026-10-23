@@ -4,8 +4,9 @@ import SelectedProjects from "@/widgets/homePageSections/selectedProjects/Select
 import Advantages from "@/widgets/homePageSections/advantages/Advantages";
 import CommonQuestions from "@/widgets/homePageSections/commonQuestions/CommonQuestions";
 import OurExpertise from "@/widgets/homePageSections/ourExpertise/OurExpertise";
-import Reviews from "@/widgets/homePageSections/reviews/Reviews";
 import GetQuote from "@/widgets/homePageSections/getQuote/GetQuote";
+// import CompanyStats from "@/widgets/homePageSections/companyStats/CompanyStats";
+// import CompanyClients from "@/widgets/homePageSections/companyClients/CompanyClients";
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
       <Advantages />
       <SelectedProjects />
       <OurExpertise />
-      <Reviews />
+      {/* <Reviews /> */}
       <CommonQuestions />
       <GetQuote />
     </>

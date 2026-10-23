@@ -176,7 +176,6 @@ function GetQuote() {
               <span className={styles.contactIcon} aria-hidden="true" />
               <div>
                 <h4 className={styles.contactLabel}>{t("getQuote.sidebar.officeLabel")}</h4>
-                {/* <p className={styles.contactValue}>Pärnu mnt 18, 10141 Tallinn, Estonia</p> */}
                 <address className={styles.contactValue}>Õismäe tee 99, 13515 Tallinn</address>
               </div>
             </li>
@@ -184,16 +183,19 @@ function GetQuote() {
               <span className={styles.contactIcon} aria-hidden="true" />
               <div>
                 <h4 className={styles.contactLabel}>{t("getQuote.sidebar.phoneLabel")}</h4>
-                <p className={styles.contactValue}>+372 5123 4567</p>
+
+                <a className={styles.contactValue} href="tel:+37251234567">
+                  +372 5123 4567
+                </a>
               </div>
             </li>
-            <li className={styles.contactItem}>
+            {/* <li className={styles.contactItem}>
               <span className={styles.contactIcon} aria-hidden="true" />
               <div>
                 <h4 className={styles.contactLabel}>{t("getQuote.sidebar.emailLabel")}</h4>
                 <p className={styles.contactValue}>info@alpkon.ee (внести справжню пошту)</p>
               </div>
-            </li>
+            </li> */}
           </ul>
 
           <div className={styles.responseTime}>

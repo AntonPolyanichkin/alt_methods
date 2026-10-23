@@ -8,18 +8,22 @@
   display: flex;
   align-items: flex-end;
   @include adaptiveValue("height", 420, 280);
+  background: url("../../../../shared/pictures/hero-section-image.webp") no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center 45%;
   overflow: clip;
-  background: url("../../../../shared/pictures/hero-section-image.webp") center / cover no-repeat;
-  overflow: clip;
+  @media (max-width: toEm(600.98)) {
+    & {
+      background-position: center;
+    }
+  }
   &::after {
     content: "";
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(to top, rgb(21 27 40 / 85%) 0%, rgb(21 27 40 / 20%) 2%, rgb(21 27 40 / 0%) 100%),
-      linear-gradient(to bottom, rgb(21 27 40 / 85%) 0%, rgb(21 27 40 / 20%) 48%, rgb(21 27 40 / 0%) 100%);
+      linear-gradient(to top, rgb(45 49 54 / 60%) 0%, rgb(45 49 54 / 30%) 50%, rgb(45 49 54 / 40%) 100%),
+      linear-gradient(to bottom, rgb(45 49 54 / 60%) 0%, rgb(45 49 54 / 20%) 60%, rgb(45 49 54 / 30%) 100%);
     z-index: 1;
   }
 
@@ -42,7 +46,7 @@
 
   & .subtitle {
     max-width: 32rem;
-    color: #f2f1ec;
+    color: rgba(255, 255, 255, 0.6);
     @include adaptiveValue("font-size", 18, 15);
     line-height: 1.5;
   }

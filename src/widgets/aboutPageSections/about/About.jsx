@@ -9,7 +9,7 @@ function About() {
   const { contact } = useNavigationRoutes();
 
   const certifications = t("aboutPage.certifications", { returnObjects: true });
-  const regions = t("aboutPage.regions", { returnObjects: true });
+  // const regions = t("aboutPage.regions", { returnObjects: true });
 
   return (
     <>
@@ -21,7 +21,7 @@ function About() {
             <h1 className={styles.sectionTitle}>{t("aboutPage.storyTitle")}</h1>
             <p className={styles.paragraph}>{t("aboutPage.storyParagraph1")}</p>
             <p className={styles.paragraph}>{t("aboutPage.storyParagraph2")}</p>
-            <p className={styles.paragraphPlaceholder}>{t("aboutPage.storyParagraph3")}</p>
+            {/* <p className={styles.paragraphPlaceholder}>{t("aboutPage.storyParagraph3")}</p> */}
 
             <h2 className={styles.sectionTitle}>{t("aboutPage.certificationsTitle")}</h2>
             <ul className={styles.certList}>
@@ -35,11 +35,11 @@ function About() {
             </ul>
 
             <h2 className={styles.sectionTitle}>{t("aboutPage.regionsTitle")}</h2>
-            <p className={styles.regionsList}>{Array.isArray(regions) && regions.join(" · ")}</p>
+            <p className={styles.regionsList}>{t("aboutPage.regions")}</p>
           </div>
 
           <aside className={styles.sidebar}>
-            <div className={styles.infoCard}>
+            {/* <div className={styles.infoCard}>
               <p className={styles.infoCardEyebrow}>{t("aboutPage.infoCard.eyebrow")}</p>
               <ul className={styles.infoCardList}>
                 <li>{t("aboutPage.infoCard.founded")}</li>
@@ -47,7 +47,7 @@ function About() {
                 <li className={styles.placeholderItem}>{t("aboutPage.infoCard.countriesPlaceholder")}</li>
                 <li className={styles.placeholderItem}>{t("aboutPage.infoCard.projectsPlaceholder")}</li>
               </ul>
-            </div>
+            </div> */}
 
             <div className={styles.irataNote}>
               <p className={styles.irataEyebrow}>{t("aboutPage.irataNote.eyebrow")}</p>
@@ -62,7 +62,6 @@ function About() {
 
             <Link to={contact} className={styles.ctaButton}>
               {t("aboutPage.ctaButton")}
-              <span className={styles.ctaArrow} aria-hidden="true" />
             </Link>
           </aside>
         </div>

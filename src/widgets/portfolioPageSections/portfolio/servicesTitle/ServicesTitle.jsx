@@ -5,7 +5,7 @@ function ServiceHero({ service, titleKey }) {
   const { t } = useTranslation();
 
   return (
-    <section className={styles.serviceHero} style={{ backgroundImage: `url(${service.heroImage})` }}>
+    <section className={styles.serviceHero} style={{ backgroundImage: `url(${service.posterImg})` }}>
       <div className={styles["service-hero-container"]}>
         <p className={styles.eyebrow}>{t("menu.title.services")}</p>
         <h1 className={styles.title}>{t(titleKey)}</h1>

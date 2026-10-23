@@ -4,6 +4,7 @@ import styles from "./styles/selectedProjectsStyles.module.scss";
 import { useTranslation } from "react-i18next";
 import { useNavigationRoutes } from "@/app/router/navigationRoutes/useNavigationRoutes";
 import { servicesList } from "@/app/constData/servicesList";
+import ProjectCard from "@/widgets/portfolioPageSections/portfolio/projectCard/ProjectCard";
 function SelectedProjects() {
   const { t } = useTranslation();
   const { portfolio } = useNavigationRoutes();
@@ -24,14 +25,15 @@ function SelectedProjects() {
         </div>
         <div className={styles.selectedProgectsCardsContianer}>
           {servicesList.map((service, index) => (
-            <article className={styles.selectedProgectsCard} key={index}>
-              <div className={styles.selectedProgectsCardPictureContainer}>
-                <img src={service.heroImage} alt="" className={styles.selectedProgectsCardPicture} />
-              </div>
-              <div className={styles.selectedProgectsCardTag}>
-                <p>{t(`serviceDetail.${service.slug}.title`)}</p>
-              </div>
-            </article>
+            // <article className={styles.selectedProgectsCard} key={index}>
+            //   <Link to={routes.serviceDetail(service.slug)} className={styles.selectedProgectsCardPictureContainer}>
+            //     <img src={service.heroImage} alt="" className={styles.selectedProgectsCardPicture} />
+            //   </Link>
+            //   <div className={styles.selectedProgectsCardTag}>
+            //     <p>{t(`serviceDetail.${service.slug}.title`)}</p>
+            //   </div>
+            // </article>
+            <ProjectCard project={service} key={index} />
           ))}
         </div>
       </div>

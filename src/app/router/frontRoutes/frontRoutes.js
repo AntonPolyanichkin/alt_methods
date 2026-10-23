@@ -3,7 +3,7 @@ export const frontRoutes = {
   services: "services",
   serviceDetail: "services/:slug",
   portfolio: "portfolio",
-  projectDetail: "portfolio/:slug",
+  // projectDetail: "portfolio/:slug",
   about: "about",
   contacts: "contacts",
   notFound: "*",

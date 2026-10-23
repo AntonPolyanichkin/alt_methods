@@ -8,7 +8,7 @@ import { getServiceBySlug } from "@/app/constData/servicesList";
 function ServiceDetail() {
   const { slug } = useParams();
   const { t } = useTranslation();
-  const {services, contact } = useNavigationRoutes();
+  const { services, contact } = useNavigationRoutes();
 
   const service = getServiceBySlug(slug);
 
@@ -55,10 +55,10 @@ function ServiceDetail() {
                 {t("getQuoteBtn.btnText")}
                 <span className={styles.quoteCtaArrow} aria-hidden="true" />
               </Link>
-              <a className={styles.quotePhone} href="tel:+37251234567">
+              {/* <a className={styles.quotePhone} href="tel:+37251234567">
                 <span className={styles.quotePhoneIcon} aria-hidden="true" />
                 +372 5123 4567
-              </a>
+              </a> */}
             </div>
 
             <div className={styles.credentialNote}>
@@ -71,13 +71,14 @@ function ServiceDetail() {
 
       <section className={styles.gallerySection}>
         <div className={styles["gallery-container"]}>
-          <h2 className={styles.galleryTitle}>{t("serviceDetail.galleryTitle")}</h2>
+          {service.gallery.length > 0 && <h2 className={styles.galleryTitle}>{t("serviceDetail.galleryTitle")}</h2>}
           <div className={styles.galleryGrid}>
-            {service.gallery.map((image, index) => (
-              <div key={index} className={styles.galleryItem}>
-                <img src={image} alt="" className={styles.galleryImage} />
-              </div>
-            ))}
+            {service.gallery.length > 0  &&
+              service.gallery.map((image, index) => (
+                <div key={index} className={styles.galleryItem}>
+                  <img src={image} alt="" className={styles.galleryImage} />
+                </div>
+              ))}
           </div>
         </div>
       </section>

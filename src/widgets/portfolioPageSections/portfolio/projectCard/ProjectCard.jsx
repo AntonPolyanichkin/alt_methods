@@ -9,12 +9,10 @@ function ProjectCard({ project }) {
   const routes = useNavigationRoutes();
   return (
     <article className={styles.projectCard}>
-      <div className={styles.pictureContainer}>
-        <Link to={routes.serviceDetail(project.slug)}>
-          <img src={project.heroImage} alt={title} className={styles.picture} loading="lazy" />
-        </Link>
+      <Link to={routes.serviceDetail(project.slug)} className={styles.pictureContainer}>
+        <img src={project.heroImage} alt={title} className={styles.picture} loading="lazy" />
         <span className={styles.tag}>{t(`portfolioPage.categories.${project.category}`)}</span>
-      </div>
+      </Link>
       <h3 className={styles.title}>{title}</h3>
     </article>
   );

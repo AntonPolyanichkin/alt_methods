@@ -33,10 +33,7 @@ function CommonQuestions() {
                   <Typography className={styles.heading}>{t(`faq.questions.${question}`)}</Typography>
                 </AccordionSummary>
                 <AccordionDetails id={detailsId} aria-labelledby={summaryId}>
-                  <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
-                    blandit leo lobortis eget.
-                  </Typography>
+                  <Typography>{t(`faq.answers.${question}`)}</Typography>
                 </AccordionDetails>
               </Accordion>
             );

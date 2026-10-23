@@ -7,13 +7,9 @@
   & .pictureContainer {
     position: relative;
     margin-bottom: 1.25rem;
-    width: 100%;
-    max-height: 20rem;
+    max-width: 22.375rem;
+    max-height: 16.8125rem;
     overflow: hidden;
-
-    // @media (max-width: toEm($mobile)) {
-    //   height: 16rem;
-    // }
 
     & .picture {
       width: 100%;

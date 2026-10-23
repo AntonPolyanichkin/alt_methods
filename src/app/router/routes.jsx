@@ -4,7 +4,6 @@ import Services from "@/pages/services/ServicesPage";
 import { frontRoutes } from "./frontRoutes/frontRoutes";
 import Portfolio from "@/pages/portfolio/PortfolioPage";
 import ServicesDetail from "@/widgets/portfolioPageSections/portfolio/servicesDetail/ServicesDetail";
-import ProjectDetails from "@/pages/projectDetails/ProjectDetails";
 import About from "@/pages/about/AboutPage";
 import Contacts from "@/pages/contacts/ContactsPage";
 import NotFound from "@/pages/notFound/NotFound";
@@ -48,11 +47,11 @@ export const routes = [
           isInMenu: true,
         },
       },
-      {
-        path: frontRoutes.projectDetail,
-        element: <ProjectDetails />,
-        meta: { isInMenu: false },
-      },
+      // {
+      //   path: frontRoutes.projectDetail,
+      //   element: <ProjectDetails />,
+      //   meta: { isInMenu: false },
+      // },
       {
         path: frontRoutes.about,
         element: <About />,
