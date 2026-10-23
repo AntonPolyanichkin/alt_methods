@@ -3,12 +3,12 @@
 
 .projectCard {
   position: relative;
-
+  max-width: 22.375rem;
   & .pictureContainer {
     position: relative;
     margin-bottom: 1.25rem;
-    max-width: 22.375rem;
     max-height: 16.8125rem;
+    width: 100%;
     overflow: hidden;
 
     & .picture {
