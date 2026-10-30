@@ -184,7 +184,6 @@ The contact page provides a quote request form with:
 - Object address
 - Service
 - Project description
-- Photo upload
 - Consent checkbox
 
 ## Positioning
