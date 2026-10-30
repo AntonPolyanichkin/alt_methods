@@ -200,6 +200,16 @@
     "storyParagraph1": "Altmethods OÜ was founded in Tallinn in 2024 by a team with backgrounds in construction, industrial inspection, and rope access.",
     "storyParagraph2": "We built Altmethods on a clear conviction: that rope access, applied by properly certified technicians, is a serious engineering method — faster, less disruptive, and often more economical than conventional access equipment. It is not a niche activity. It is the right tool for a specific class of problem.",
     "storyParagraph3": "[Add client/project examples once available]",
+    "motto": "Mens et manus",
+    "mottoLabel": "Company motto: Mens et manus",
+    "mottoTranslation": "By Mind and Hand",
+    "certificateCarousel": {
+      "label": "Certificate image previews",
+      "previous": "Previous image",
+      "next": "Next image",
+      "slide": "Show image {{current}} of {{total}}",
+      "previewNote": "Our Certificates"
+    },
     "certificationsTitle": "Certifications & Standards",
     "certifications": [
       "IRATA International — Levels 1, 2 & 3",
@@ -376,6 +386,51 @@
         "Localized touch-up and finishing work",
         "Visual check of completed areas"
       ]
+    },
+    "roof-demolition-and-dismantling": {
+      "title": "Roof Demolition and Dismantling",
+      "description": "Demolition and dismantling of roofs and roof structures. Rope access provides a way to work on elevated and hard-to-reach roof areas, helping to limit the need for extensive temporary access structures.",
+      "calloutTitle": "Controlled Work at Height",
+      "calloutText": "Rope access helps technicians reach roof areas at height where large temporary access structures are impractical. The exact scope and method of dismantling are determined for each project.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Dismantling of roofing materials",
+        "Removal of roof structure elements",
+        "Lowering and removal of dismantled material",
+        "Securing of the work area"
+      ]
+    },
+    "arboriculture-hazardous-tree-felling": {
+      "title": "Arboriculture: Hazardous Tree Felling",
+      "description": "Felling and removal of hazardous or damaged trees using climbing and rope techniques. Where trees stand close to buildings, utilities or other obstacles, climbing allows the work to be done in sections with limited disruption to the surrounding area.",
+      "calloutTitle": "Work Where Access Is Limited",
+      "calloutText": "Climbing and rope techniques help technicians reach trees where machinery cannot be used or space is limited. The exact method and scope are determined after assessing each tree and its surroundings.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Assessment of the tree and surrounding area",
+        "Sectional felling of hazardous trees",
+        "Lowering of cut sections",
+        "Clearing of the work area"
+      ]
+    },
+    "led-lighting-installation": {
+      "title": "LED Lighting Installation",
+      "description": "Installation of LED lighting on facades, roofs and other elevated structures. Rope access provides a way to reach installation points at height without extensive temporary access structures.",
+      "calloutTitle": "Installation at Height",
+      "calloutText": "Rope access helps technicians reach installation points on facades and elevated structures where other access methods are impractical. The exact scope and lighting solution are determined for each project.",
+      "worksIncludedTitle": "Works Included",
+      "works": [
+        "Preparation of installation points",
+        "Mounting and fastening of LED lighting elements",
+        "Visual check of installed elements"
+      ]
     }
+  },
+  "certificateAlt": {
+    "eddy-current-et-level-2": "Eddy current testing (ET) Level 2 certificate, EN ISO 9712, issued by VÚZ (Welding Research Institute)",
+    "irata-level-2": "IRATA Level 2 certificate of competence in rope access",
+    "penetrant-pt-level-2": "Penetrant testing (PT) Level 2 certificate, EN ISO 9712, issued by VÚZ (Welding Research Institute)",
+    "ultrasonic-ut-level-2": "Ultrasonic testing (UT) Level II certificate of conformity, EN ISO 9712, issued by Sich Cert",
+    "opito-bosiet": "OPITO BOSIET certificate with CA-EBS: basic offshore safety induction and emergency training"
   }
 }

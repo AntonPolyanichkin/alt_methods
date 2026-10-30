@@ -61,8 +61,8 @@ function Footer() {
                 <address className={styles.footerLink}>Õismäe tee 99, 13515 Tallinn</address>
               </li>
               <li>
-                <a className={styles.footerLink} href="tel:+37251234567">
-                  +372 5123 4567
+                <a className={styles.footerLink} href="tel:+37255625510">
+                  +372 5562 5510
                 </a>
               </li>
               {/* <li>

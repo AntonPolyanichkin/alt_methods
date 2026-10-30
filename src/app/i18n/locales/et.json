@@ -200,6 +200,16 @@
     "storyParagraph1": "Altmethods OÜ asutati Tallinnas 2024. aastal meeskonna poolt, kellel on taust ehituses, tööstuslikus inspekteerimises ja rope access'is.",
     "storyParagraph2": "Rajasime Altmethodsi selgele veendumusele: rope access, mida rakendavad nõuetekohaselt sertifitseeritud tehnikud, on tõsine inseneritehniline meetod — kiirem, vähem häiriv ja sageli ökonoomsem kui tavapärane ligipääsutehnika. See ei ole nišitegevus. See on õige tööriist konkreetset tüüpi probleemide jaoks.",
     "storyParagraph3": "[Lisage näited klientidest/objektidest, kui need on olemas]",
+    "motto": "Mens et manus",
+    "mottoLabel": "Ettevõtte moto: Mens et manus",
+    "mottoTranslation": "Mõistuse ja kätega",
+    "certificateCarousel": {
+      "label": "Sertifikaatide piltide eelvaated",
+      "previous": "Eelmine pilt",
+      "next": "Järgmine pilt",
+      "slide": "Näita pilti {{current}} / {{total}}",
+      "previewNote": "Meie sertifikaadid"
+    },
     "certificationsTitle": "Sertifikaadid ja standardid",
     "certifications": [
       "IRATA International — tasemed 1, 2 ja 3",
@@ -376,6 +386,51 @@
         "Kohapealsed viimistlus- ja parandustööd",
         "Teostatud tööde visuaalne kontroll"
       ]
+    },
+    "roof-demolition-and-dismantling": {
+      "title": "Katuse lammutus ja demonteerimine",
+      "description": "Katuste ja katusekonstruktsioonide lammutamine ja demonteerimine. Rope access võimaldab töötada kõrgel asuvatel ja raskesti ligipääsetavatel katusealadel, aidates vähendada ulatuslike ajutiste ligipääsukonstruktsioonide vajadust.",
+      "calloutTitle": "Kontrollitud töö kõrgustes",
+      "calloutText": "Rope access aitab tehnikutel jõuda kõrgustes asuvate katusealadeni, kus suured ajutised ligipääsukonstruktsioonid ei ole otstarbekad. Lammutuse täpne maht ja meetod määratakse iga projekti jaoks eraldi.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Katusematerjalide demonteerimine",
+        "Katusekonstruktsiooni elementide eemaldamine",
+        "Demonteeritud materjali allalaskmine ja äravedu",
+        "Tööala turvamine"
+      ]
+    },
+    "arboriculture-hazardous-tree-felling": {
+      "title": "Arboristika: ohtlike puude langetamine",
+      "description": "Ohtlike või kahjustunud puude langetamine ja eemaldamine ronimis- ja köistehnikate abil. Kui puud kasvavad hoonete, kommunikatsioonide või muude takistuste lähedal, võimaldab ronimine töid teha osade kaupa, häirides ümbruskonda võimalikult vähe.",
+      "calloutTitle": "Töö piiratud ligipääsuga kohtades",
+      "calloutText": "Ronimis- ja köistehnikad aitavad tehnikutel jõuda puudeni, kus masinaid ei saa kasutada või ruum on piiratud. Täpne meetod ja maht määratakse pärast iga puu ja selle ümbruse hindamist.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Puu ja ümbruse hindamine",
+        "Ohtlike puude langetamine osade kaupa",
+        "Lõigatud osade allalaskmine",
+        "Tööala koristamine"
+      ]
+    },
+    "led-lighting-installation": {
+      "title": "LED-valgustuse paigaldus",
+      "description": "LED-valgustuse paigaldus fassaadidele, katustele ja teistele kõrgel asuvatele konstruktsioonidele. Rope access võimaldab jõuda paigalduskohtadeni kõrgustes ilma ulatuslike ajutiste ligipääsukonstruktsioonideta.",
+      "calloutTitle": "Paigaldus kõrgustes",
+      "calloutText": "Rope access aitab tehnikutel jõuda fassaadidel ja kõrgetel konstruktsioonidel asuvate paigalduskohtadeni, kus muud ligipääsumeetodid ei ole otstarbekad. Töö täpne maht ja valgustuslahendus määratakse iga projekti jaoks eraldi.",
+      "worksIncludedTitle": "Tööde loetelu",
+      "works": [
+        "Paigalduskohtade ettevalmistus",
+        "LED-valgustuselementide paigaldus ja kinnitamine",
+        "Paigaldatud elementide visuaalne kontroll"
+      ]
     }
+  },
+  "certificateAlt": {
+    "eddy-current-et-level-2": "Pöörisvoolukontrolli (ET) 2. taseme sertifikaat, EN ISO 9712, välja andnud VÚZ (Keevitusuuringute Instituut)",
+    "irata-level-2": "IRATA rope access pädevussertifikaat, 2. tase",
+    "penetrant-pt-level-2": "Kapillaarkontrolli (PT) 2. taseme sertifikaat, EN ISO 9712, välja andnud VÚZ (Keevitusuuringute Instituut)",
+    "ultrasonic-ut-level-2": "Ultraheli kontrolli (UT) 2. taseme vastavussertifikaat, EN ISO 9712, välja andnud Sich Cert",
+    "opito-bosiet": "OPITO BOSIET sertifikaat koos CA-EBS-iga: avamere ohutuse sissejuhatav ja hädaolukordade koolitus"
   }
 }

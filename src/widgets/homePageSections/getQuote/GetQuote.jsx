@@ -184,8 +184,8 @@ function GetQuote() {
               <div>
                 <h4 className={styles.contactLabel}>{t("getQuote.sidebar.phoneLabel")}</h4>
 
-                <a className={styles.contactValue} href="tel:+37251234567">
-                  +372 5123 4567
+                <a className={styles.contactValue} href="tel:+37255625510">
+                  +372 5562 5510
                 </a>
               </div>
             </li>

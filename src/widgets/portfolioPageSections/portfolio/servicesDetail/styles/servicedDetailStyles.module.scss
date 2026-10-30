@@ -73,13 +73,15 @@
 
 .workItem {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   column-gap: 0.625rem;
   padding-block: 0.875rem;
   border-bottom: 0.0625rem solid rgba(21, 27, 40, 0.1);
-  color: #151b28;
-  @include adaptiveValue("font-size", 14, 13);
-  line-height: 1.4;
+  & .text {
+    color: #151b28;
+    @include adaptiveValue("font-size", 14, 13);
+    line-height: 1.2;
+  }
 }
 
 .checkIcon {
@@ -90,7 +92,6 @@
   background: url("../../../../../shared/icons/check-icon.svg") no-repeat center;
 }
 
-// ===== Сайдбар =====
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -198,7 +199,6 @@
   line-height: 1.5;
 }
 
-// ===== Галерея =====
 .gallerySection {
   @include adaptiveValue("padding-block", 56, 32);
   background-color: #f2f1ec;

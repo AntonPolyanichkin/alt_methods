@@ -40,7 +40,7 @@ function ServiceDetail() {
                 works.map((work, index) => (
                   <li key={index} className={styles.workItem}>
                     <span className={styles.checkIcon} aria-hidden="true" />
-                    {work}
+                    <span className={styles.text} >{work}</span>
                   </li>
                 ))}
             </ul>
@@ -55,9 +55,9 @@ function ServiceDetail() {
                 {t("getQuoteBtn.btnText")}
                 <span className={styles.quoteCtaArrow} aria-hidden="true" />
               </Link>
-              {/* <a className={styles.quotePhone} href="tel:+37251234567">
+              {/* <a className={styles.quotePhone} href="tel:+37255625510">
                 <span className={styles.quotePhoneIcon} aria-hidden="true" />
-                +372 5123 4567
+                +372 5562 5510
               </a> */}
             </div>
 

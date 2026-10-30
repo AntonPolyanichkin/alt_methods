@@ -42,6 +42,61 @@
   line-height: 1.6;
 }
 
+.mottoContainer {
+  position: relative;
+  align-self: flex-start;
+  margin-top: -0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.mottoButton {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.4rem;
+  padding: 0.2rem 0;
+  border: 0;
+  background: transparent;
+  color: #264761;
+  font-size: 0.9375rem;
+  font-style: italic;
+  text-decoration: underline dotted;
+  text-underline-offset: 0.2rem;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 0.125rem solid #264761;
+    outline-offset: 0.2rem;
+  }
+}
+
+.mottoInfoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 0.0625rem solid currentColor;
+  border-radius: 50%;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.mottoPopover {
+  position: fixed;
+  z-index: 20;
+  max-width: calc(100vw - 1.5rem);
+  padding: 0.65rem 0.85rem;
+  border: 0.0625rem solid rgba(21, 27, 40, 0.08);
+  background: #ffffff;
+  box-shadow: 0 0.35rem 1rem rgba(21, 27, 40, 0.14);
+  color: #151b28;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  white-space: normal;
+}
+
 .paragraphPlaceholder {
   padding: 0.875rem 1rem;
   background-color: rgba(21, 27, 40, 0.04);

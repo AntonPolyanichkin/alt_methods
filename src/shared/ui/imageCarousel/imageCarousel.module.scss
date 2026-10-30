@@ -1,0 +1,136 @@
+.carousel {
+  width: 100%;
+  margin-block: 1.25rem 2.5rem;
+}
+
+.note {
+  margin-top: 0.5rem;
+  color: rgba(21, 27, 40, 0.65);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.stage {
+  display: grid;
+  position: relative;
+  place-items: center;
+  height: 23rem;
+  padding: 0.75rem;
+  background: transparent;
+  touch-action: pan-y;
+  user-select: none;
+
+  @media (max-width: 48rem) {
+    height: 19rem;
+  }
+}
+
+.image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 21rem;
+  object-fit: contain;
+  animation: imageEnter 0.24s ease-out;
+
+  @media (max-width: 48rem) {
+    max-height: 17rem;
+  }
+}
+
+@keyframes imageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(0.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image {
+    animation: none;
+  }
+}
+
+.caption {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  color: #151b28;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  padding-top: 0.75rem;
+}
+
+.arrowButton {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0.0625rem solid rgba(21, 27, 40, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  color: #264761;
+  cursor: pointer;
+
+  &::before {
+    width: 0.45rem;
+    height: 0.45rem;
+    border-top: 0.1rem solid currentColor;
+    border-right: 0.1rem solid currentColor;
+    content: "";
+  }
+
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    border-color: #264761;
+  }
+}
+
+.previous::before {
+  transform: translateX(0.1rem) rotate(-135deg);
+}
+
+.next::before {
+  transform: translateX(-0.1rem) rotate(45deg);
+}
+
+.indicators {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.indicator {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(21, 27, 40, 0.25);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 0.125rem solid #264761;
+    outline-offset: 0.15rem;
+  }
+}
+
+.activeIndicator {
+  background: #264761;
+}
